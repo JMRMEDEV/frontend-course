@@ -2,6 +2,13 @@
 
 [**HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML) is the most basic building block of the Web. It defines the meaning and structure of web content.
 
+## Module Content
+
+- [HTML Tags](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title)
+- [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title)
+
+## HTML tags
+
 HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as:
 
 1. [`<title>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title).
@@ -19,7 +26,7 @@ HTML uses "markup" to annotate text, images, and other content for display in a 
 
 And many others...
 
-## Title
+### Title
 
 The title tag let us set the title of the web page we are working on:
 
@@ -27,7 +34,7 @@ The title tag let us set the title of the web page we are working on:
 
 ![image](https://user-images.githubusercontent.com/58167190/179821111-5622d54b-c7ea-484e-a1ea-f25689a8be52.png)
 
-## Body
+### Body
 
 This tag represents the content of a web page. There can be only one body inside a web page.
 
@@ -41,7 +48,7 @@ This tag represents the content of a web page. There can be only one body inside
 </body>
 ```
 
-## Header
+### Header
 
 The header represents introductory content. Please notice that this tag does not break the content into different sections.
 
@@ -58,7 +65,7 @@ The header represents introductory content. Please notice that this tag does not
 
 ![image](https://user-images.githubusercontent.com/58167190/180033731-b25625bd-57d1-471f-ac9f-c0ba4d81f810.png)
 
-## Footer
+### Footer
 
 In a webpage, this element typically contains information about the author, copyright or relevant links.
 
@@ -78,7 +85,7 @@ In a webpage, this element typically contains information about the author, copy
 
 ![image](https://user-images.githubusercontent.com/58167190/180033986-c2869494-bec6-48b7-9382-e018eda1aeae.png)
 
-## Section
+### Section
 
 This element represents a section of a document. It should have a heading element.
 
@@ -104,7 +111,7 @@ This element represents a section of a document. It should have a heading elemen
 
 ![image](https://user-images.githubusercontent.com/58167190/180034113-8dc994ce-74dd-4cac-aa9e-0b66d3c042c9.png)
 
-## P
+### P
 
 This HTML element defines a paragraph.
 
@@ -119,7 +126,7 @@ This HTML element defines a paragraph.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034208-23c47a83-6d93-4efe-9e35-ebd1bc610d97.png)
 
-## Div
+### Div
 
 This is one of the most relevant items of HTML. It groups some other elements.
 
@@ -135,7 +142,7 @@ This is one of the most relevant items of HTML. It groups some other elements.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034300-3fe13639-0d17-4dd7-a6d6-9b848aa61ebc.png)
 
-## Img
+### Img
 
 This item is pretty self-explanatory. It does render an image with a given image soruce (online or offline).
 
@@ -150,7 +157,7 @@ This item is pretty self-explanatory. It does render an image with a given image
 
 ![image](https://user-images.githubusercontent.com/58167190/180034326-114d4e88-c17d-4276-a4f2-138c88952273.png)
 
-## Nav
+### Nav
 
 The purpose of this element is to rpovide navigation links.
 
@@ -169,7 +176,7 @@ The purpose of this element is to rpovide navigation links.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034569-9b935520-27b4-4a61-89bc-3ab61470c3bb.png)
 
-## UL
+### UL
   
 This element represents an unordered list.
   
@@ -185,7 +192,7 @@ This element represents an unordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034667-90fbfea9-d5c9-4da3-b199-d7687200b5a9.png)
   
-## OL
+### OL
   
 This element represents an ordered list.
   
@@ -201,7 +208,7 @@ This element represents an ordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034760-3ee2203d-0092-443b-88d9-1f9b1ebcb60b.png)
   
-## LI
+### LI
   
 This is a plain item to be used inside of a list.
   
@@ -217,3 +224,17 @@ This is a plain item to be used inside of a list.
 ![image](https://user-images.githubusercontent.com/58167190/180034773-dcc5b475-71da-49f4-97c1-da38a4d119df.png)
 
 Sources: [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/HTML).
+
+## Module activity
+
+Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following requirements:
+
+- Have a `<body>` tag.
+- Have a `<h>` tag (for the types of pizza that we have).
+- Have images `<img>` (regarding each image file).
+- Have descriptions with `<p>` for describing each pizza. 
+- An unordered list `ul` describing pizza dough types.
+
+**Tip:** Group each pizza type into a `div` tag.
+
+
