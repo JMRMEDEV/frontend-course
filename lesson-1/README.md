@@ -241,6 +241,8 @@ This element represents an unordered list.
 ```
   <ul>
     <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
   </ul>
 ```
   
@@ -248,6 +250,8 @@ This element represents an unordered list.
   
 <ul>
   <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
 </ul>
   
 # OL
@@ -259,6 +263,8 @@ This element represents an ordered list.
 ```
   <ol>
     <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
   </ol>
 ```
   
@@ -267,6 +273,7 @@ This element represents an ordered list.
 <ol>
   <li>Item 1</li>
   <li>Item 2</li>
+  <li>Item 3</li>
 </ol>
   
 # LI
