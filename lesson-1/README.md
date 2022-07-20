@@ -4,8 +4,8 @@
 
 ## Module Content
 
-- [HTML Tags](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title)
-- [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title)
+- [HTML Tags](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#html-tags)
+- [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#module-activity)
 
 ## HTML tags
 
