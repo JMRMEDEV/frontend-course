@@ -1,6 +1,6 @@
 # Frontend Course
 
-We development is one of the industries with a wide presence in the current job market. No matter your professional career, if you probe your knowledge on web development, is highly probable that you will get yourself a well-paid job. Web development is divided into two main different areas (there are many and more):
+Web development is one of the industries with a wide presence in the current job market. No matter your professional career, if you probe your knowledge on web development, is highly probable that you will get yourself a well-paid job. Web development is divided into two main different areas (there are many and more):
 
 - Frontend (what the user can see).
 - Backend (data handling in some server to send information to the user).
