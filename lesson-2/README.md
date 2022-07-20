@@ -402,23 +402,145 @@ Layout refers to the order and structure used for displaying the different prese
   
 In CSS layout, we will find how to distribute the size of different graphic elements in an elegant manner. For such matter, we might use either `flexbox` or `grid` systems. We will review some of the most common layout CSS properties:
   
-1. [`display`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-2. [`flex`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-5. [`align-items`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-6. [`align-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-7. [`column-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-8. [`row-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+1. [`display`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#display)
+2. [`flex`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#flex-direction)
+3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#justify-content)
+4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
+5. [`align-items`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
+6. [`align-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-content)
+7. [`column-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#column-gap)
+8. [`row-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#row-gap)
+9. [`margin`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#margin)
+9. [`padding`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#padding)
 
 ### display
+
+This CSS property as it is may have different use-cases. But for our purposes we will only focus on the most relevant layout values: `flex` and `grid`. This property tells the container how should display its children.
+
+**Examples:**
+
+```
+<div style="display: flex; background-color: yellow; height: 200px;">
+  <div style="background-color: red;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/58167190/180071615-900677bb-c2c0-4422-9fab-345e2639a2b5.png)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>
+```
+
+![image](https://user-images.githubusercontent.com/58167190/180072195-781c5638-b565-4ed8-bcf4-fdda5185ecb0.png)
+
 ### flex
+
+This property tell us how much proportion will take the child of a `flex` container. The value (number) set in the flex property, will divide the total space of the container into fractions of the container. For example, if we set three items with `flex: 1`, the space will be divided into three parts and each child will take one of those three parts.
+
+**Example:**
+
+```
+<div style="display: flex; background-color: yellow; height: 200px;">
+  <div style="background-color: red; flex: 1;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; flex: 1;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; flex: 1;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/58167190/180072769-9697efcc-f869-421e-9580-dfbf47718d92.png)
+
+But... What would happen if we set a `flex: 2` to one of those inner `div`s? Well, now the parent space would be **`4`**: flex `1` + flex `1` + flex `2` = `4` flexes. An the item with `flex: 2` will take `2/4` of the total flex-space:
+
+```
+<div style="background-color: red; flex: 2;">
+  <text>Hello there</text>
+</div>
+<div style="background-color: blue; flex: 1;">
+  <text>Hello there</text>
+</div>
+<div style="background-color: pink; flex: 1;">
+  <text>Hello there</text>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/58167190/180073200-5df1d1f3-1703-4369-a3c3-07bf2376d0b7.png)
+
+What about if we set each `flex` property to `2`? Now we would end with flex `2` + flex `2` + flex `2` = `6` flexes. But as we are taking `2` flex for each element, at the end, we would end with practically the same as setting `flex` to `1`.
+
+```
+<div style="display: flex; background-color: yellow; height: 200px;">
+  <div style="background-color: red; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; flex: 2;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/58167190/180073692-eb00b280-6959-44f6-8799-b5de4ef9e0bb.png)
+
 ### flex-direction
 ### justify-content
 ### align-items
 ### align-content
 ### column-gap
 ### row-gap
+### margin
+### padding
   
 ## Module Activity
 
