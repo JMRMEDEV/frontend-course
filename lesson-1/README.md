@@ -151,7 +151,7 @@ This item is pretty self-explanatory. It does render an image with a given image
 
 ```
 <div>
-  <text> In here you will find an image>
+  <text> In here you will find an image </text>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="img-example"/>
 </div>
 ```
