@@ -741,6 +741,12 @@ This property let us assign a padding (a space that the item itself will take as
 ![image](https://user-images.githubusercontent.com/58167190/180077736-de792e03-c8bc-425a-a9fa-f382c956bcb3.png)
   
 ## Module Activity
+  
+By using all that we have learnt in this lesson, we will recreate the follwing calculator:
+  
+![image](https://user-images.githubusercontent.com/58167190/180083707-c21852c2-a319-43c6-b4e3-2a069ddfa5b5.png)
+
+**Notes:** Inline styling is accepted, but if is achieved through this, the activity will have to be redone with external CSS.
 
 ## Sources
 
