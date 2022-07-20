@@ -16,7 +16,7 @@ Knowing and understanding this library will take you closer to you job goals.
 
 ## Syllabus
 
-1. HTML
+1. [HTML](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md)
 2. CSS
 3. Node.js
 4. JavaScript
