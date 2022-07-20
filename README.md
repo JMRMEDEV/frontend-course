@@ -12,7 +12,7 @@ Web development is one of the industries with a wide presence in the current job
 - Duolingo.
 - Airbnb.
 
-Knowing and understanding this library will take you closer to you job goals.
+Knowing and understanding this library will take you closer to your job goals.
 
 ## Syllabus
 
