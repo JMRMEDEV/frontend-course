@@ -27,7 +27,7 @@ The title tag let us set the title of the web page we are working on:
 
 ![image](https://user-images.githubusercontent.com/58167190/179821111-5622d54b-c7ea-484e-a1ea-f25689a8be52.png)
 
-# Body
+## Body
 
 This tag represents the content of a web page. There can be only one body inside a web page.
 
@@ -41,15 +41,7 @@ This tag represents the content of a web page. There can be only one body inside
 </body>
 ```
 
-**Output:**
-
-<body>
-  <text>
-    This is an example test
-  </text>
-</body>
-
-# Header
+## Header
 
 The header represents introductory content. Please notice that this tag does not break the content into different sections.
 
@@ -64,18 +56,9 @@ The header represents introductory content. Please notice that this tag does not
 </body>
 ```
 
-**Output:**
-<body>
-  <h1>
-    This is a header example
-  </h1>
-  <text>And this is a random text</text>
-</body>
+![image](https://user-images.githubusercontent.com/58167190/180033731-b25625bd-57d1-471f-ac9f-c0ba4d81f810.png)
 
-
-![image](https://user-images.githubusercontent.com/58167190/179822267-88565d32-e761-49ff-8178-c4f4021c205e.png)
-
-# Footer
+## Footer
 
 In a webpage, this element typically contains information about the author, copyright or relevant links.
 
@@ -93,15 +76,7 @@ In a webpage, this element typically contains information about the author, copy
   </div>
 ```
 
-**Output:**
-<div>
-  <h1>
-    This is a header example
-  </h1>
-  <text>And this is a random text</text>
-</div>
-
-![image](https://user-images.githubusercontent.com/58167190/179822464-645ff4d6-b858-4a8c-b324-e1d8ffaec497.png)
+![image](https://user-images.githubusercontent.com/58167190/180033986-c2869494-bec6-48b7-9382-e018eda1aeae.png)
 
 # Section
 
@@ -127,25 +102,9 @@ This element represents a section of a document. It should have a heading elemen
 </body>
 ```
 
-**Output:**
+![image](https://user-images.githubusercontent.com/58167190/180034113-8dc994ce-74dd-4cac-aa9e-0b66d3c042c9.png)
 
-<body>
-  <h1>This is a section example</h1>
-  <section>
-    <h2>
-      This is a header example
-    </h2>
-    <text>And this is a random text</text>
-  </section>
-  <section>
-    <h2>
-      This is a header example 2
-    </h2>
-    <text>And this is a random text 2</text>
-  </section>
-</body>
-
-# P
+## P
 
 This HTML element defines a paragraph.
 
@@ -158,14 +117,9 @@ This HTML element defines a paragraph.
 </div>
 ```
 
-**Output:**
+![image](https://user-images.githubusercontent.com/58167190/180034208-23c47a83-6d93-4efe-9e35-ebd1bc610d97.png)
 
-<div>
-  <h2>This is a header</h2>
-  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
-</div>
-
-# Div
+## Div
 
 This is one of the most relevant items of HTML. It groups some other elements.
 
@@ -179,15 +133,9 @@ This is one of the most relevant items of HTML. It groups some other elements.
 </div>
 ```
 
-**Output:**
+![image](https://user-images.githubusercontent.com/58167190/180034300-3fe13639-0d17-4dd7-a6d6-9b848aa61ebc.png)
 
-<div>
-  <h2>This is a header</h2>
-  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
-</div>
-
-
-# Img
+## Img
 
 This item is pretty self-explanatory. It does render an image with a given image soruce (online or offline).
 
@@ -200,7 +148,9 @@ This item is pretty self-explanatory. It does render an image with a given image
 </div>
 ```
 
-# Nav
+![image](https://user-images.githubusercontent.com/58167190/180034326-114d4e88-c17d-4276-a4f2-138c88952273.png)
+
+## Nav
 
 The purpose of this element is to rpovide navigation links.
 
@@ -217,20 +167,7 @@ The purpose of this element is to rpovide navigation links.
 <div>
 ```
 
-**Output:**
-
-<div>
-  <nav>
-    <a href="https://www.google.com.mx/">Google</a>
-    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
-    <a href="https://www.youtube.com/">Youtube</a>
-  </nav>
-  <h3>  
-    <text>This is different from the navbar</text>
-  </h3>
-<div>
-  
-![image](https://user-images.githubusercontent.com/58167190/179866725-d6372f9c-697a-420a-9db8-4720ff949679.png)
+![image](https://user-images.githubusercontent.com/58167190/180034569-9b935520-27b4-4a61-89bc-3ab61470c3bb.png)
 
 # UL
   
@@ -246,13 +183,7 @@ This element represents an unordered list.
   </ul>
 ```
   
-**Output:**
-  
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
+![image](https://user-images.githubusercontent.com/58167190/180034667-90fbfea9-d5c9-4da3-b199-d7687200b5a9.png)
   
 # OL
   
@@ -268,13 +199,7 @@ This element represents an ordered list.
   </ol>
 ```
   
-**Output:**
-  
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ol>
+![image](https://user-images.githubusercontent.com/58167190/180034760-3ee2203d-0092-443b-88d9-1f9b1ebcb60b.png)
   
 # LI
   
@@ -289,9 +214,6 @@ This is a plain item to be used inside of a list.
   </ol>
 ```
   
-**Output:**
-  
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ol>
+![image](https://user-images.githubusercontent.com/58167190/180034773-dcc5b475-71da-49f4-97c1-da38a4d119df.png)
+
+Sources: [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/HTML).
