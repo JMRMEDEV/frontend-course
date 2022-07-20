@@ -78,7 +78,7 @@ In a webpage, this element typically contains information about the author, copy
 
 ![image](https://user-images.githubusercontent.com/58167190/180033986-c2869494-bec6-48b7-9382-e018eda1aeae.png)
 
-# Section
+## Section
 
 This element represents a section of a document. It should have a heading element.
 
