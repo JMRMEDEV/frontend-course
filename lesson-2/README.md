@@ -119,7 +119,7 @@ When dealing with daily frontend tasks, is very likely to face the following typ
 6. [`border-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-style)
 7. [`border-width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-width)
 8. [`border-color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-color)
-9. [`text-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-decoration)
+9. [`text-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-decoration-line)
 10. [`font-size`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-size)
 11. [`text-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-align)
 12. [`font-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-style)
@@ -382,20 +382,34 @@ This property let us choose how **bold** do we want our texts.
   
 ## Image manipulation
   
+The images rendered through HTML might require some adjustments in order to have the desired look and feel. While many `style` properties can be used in the `<img>` tag, there are some others that are specific for this tag. The most relevant: `object-fit` with `fill`, `contain` and `cover` values.
+  
+1. `fill`
+  
+![image](https://user-images.githubusercontent.com/58167190/180069520-9a07a696-9ac7-4f0d-9e12-a782f29f7e55.png)
+
+2. `contain`
+  
+![image](https://user-images.githubusercontent.com/58167190/180069564-77fa782f-c573-4220-92a5-9a6635b4620d.png)
+
+3. `cover`
+  
+![image](https://user-images.githubusercontent.com/58167190/180069620-4d8f78c2-af5c-4f90-9b9b-b421815b4ff0.png)
+  
 ## Layout
   
 Layout refers to the order and structure used for displaying the different present elements. It does not make sense to have all the elements together. It usually even in our notes that we take from classes, we structure our information in a manner that can keep calling our attention.
   
 In CSS layout, we will find how to distribute the size of different graphic elements in an elegant manner. For such matter, we might use either `flexbox` or `grid` systems. We will review some of the most common layout CSS properties:
   
-1. [`display`]()
-2. [`flex`]()
-3. [`flex-direction`]()
-4. [`justify-content`]()
-5. [`align-items`]()
-6. [`align-content`]()
-7. [`column-gap`]()
-8. [`row-gap`]()
+1. [`display`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+2. [`flex`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+5. [`align-items`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+6. [`align-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+7. [`column-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
+8. [`row-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
 
 ### display
 ### flex
