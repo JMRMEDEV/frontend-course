@@ -55,7 +55,7 @@ h1 {
 }
 ```
 
-**Important note: **
+**Important note:**
 
 The units on a CSS file must be placed together with the value. So please do this: `width: 20px` and **do not** this: `width: 20 px`.
 
@@ -104,6 +104,66 @@ A case that we already know, based on our previous examples. An inline style may
 ```
 
 **Note:** An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+  
+## Common CSS Properties
+  
+When dealing with daily frontend tasks, is very likely to face the following type of properties with CSS:
+
+1. [`background-color`]()
+2. [`color`]()
+3. [`width`]()
+4. [`height`]()
+5. [`border-radius`]()
+6. [`border-style`]()
+7. [`border-width`]()
+8. [`border-color`]()
+9. [`text-decoration-line`]()
+10. [`font-size`]()
+11. [`text-align`]()
+12. [`font-style`]()
+13. [`font-weight`]()
+  
+### background-color
+### color
+### width
+### height
+### border-radius
+### border-style
+### border-width
+### border-color
+### text-decoration-line
+### font-size
+### text-align
+### font-style
+### font-weight
+  
+## Image manipulation
+  
+## Layout
+  
+Layout refers to the order and structure used for displaying the different present elements. It does not make sense to have all the elements together. It usually even in our notes that we take from classes, we structure our information in a manner that can keep calling our attention.
+  
+In CSS layout, we will find how to distribute the size of different graphic elements in an elegant manner. For such matter, we might use either `flexbox` or `grid` systems. We will review some of the most common layout CSS properties:
+  
+1. [`display`]()
+2. [`flex`]()
+3. [`flex-direction`]()
+4. [`justify-content`]()
+5. [`align-items`]()
+6. [`align-content`]()
+7. [`column-gap`]()
+8. [`row-gap`]()
+
+### display
+### flex
+### flex-direction
+### justify-content
+### align-items
+### align-content
+### column-gap
+### row-gap
+  
+## Module Activity
 
 ## Sources
 
