@@ -4,12 +4,12 @@
 
 ## Module content
 
-- CSS insertion
-- Common CSS properties
-- Image manipulation
-- Layout
-- Module Activity
-- Sources
+- [CSS insertion](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#css-insertion)
+- [Common CSS properties](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#common-css-properties)
+- [Image manipulation](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#image-manipulation)
+- [Layout](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#layout)
+- [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#module-activity)
+- [Sources](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#sources)
 
 ## CSS Insertion
 
@@ -111,19 +111,19 @@ A case that we already know, based on our previous examples. An inline style may
   
 When dealing with daily frontend tasks, is very likely to face the following type of properties with CSS:
 
-1. [`background-color`]()
-2. [`color`]()
-3. [`width`]()
-4. [`height`]()
-5. [`border-radius`]()
-6. [`border-style`]()
-7. [`border-width`]()
-8. [`border-color`]()
-9. [`text-decoration-line`]()
-10. [`font-size`]()
-11. [`text-align`]()
-12. [`font-style`]()
-13. [`font-weight`]()
+1. [`background-color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#background-color)
+2. [`color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#color)
+3. [`width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#width)
+4. [`height`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#height)
+5. [`border-radius`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-radius)
+6. [`border-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-style)
+7. [`border-width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-width)
+8. [`border-color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-color)
+9. [`text-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-decoration)
+10. [`font-size`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-size)
+11. [`text-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-align)
+12. [`font-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-style)
+13. [`font-weight`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-weight)
   
 ### background-color
   
@@ -131,7 +131,7 @@ As the name suggests, allow us to change the color of an element's background.
   
 The CSS colors can be specified in different manners:
   
-1. RGB: (`rgb(255, 99, 71)`)
+1. RGB: `rgb(255, 99, 71)`
 2. Strings: `white`
 3. HEX: `#ff6347`
 4. HSL: `hsl(9, 100%, 64%)`
