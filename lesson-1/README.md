@@ -154,7 +154,7 @@ This HTML element defines a paragraph.
 ```
 <div>
   <h2>This is a header</h2>
-  <p> Ant this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
 </div>
 ```
 
@@ -162,7 +162,7 @@ This HTML element defines a paragraph.
 
 <div>
   <h2>This is a header</h2>
-  <p> Ant this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
 </div>
 
 # Div
@@ -172,7 +172,7 @@ This is one of the most relevant items of HTML. It groups some other elements.
 ```
 <div>
   <h2>This is a header</h2>
-  <p> Ant this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
 </div>
 <div>
   <p> This is a different div, wich says is in a different group.</p>
@@ -183,7 +183,7 @@ This is one of the most relevant items of HTML. It groups some other elements.
 
 <div>
   <h2>This is a header</h2>
-  <p> Ant this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
 </div>
 
 
@@ -293,5 +293,5 @@ This is a plain item to be used inside of a list.
   
 <ol>
   <li>Item 1</li>
-  <li>Item 12</li>
+  <li>Item 2</li>
 </ol>
