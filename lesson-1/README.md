@@ -19,7 +19,7 @@ HTML uses "markup" to annotate text, images, and other content for display in a 
 
 And many others...
 
-# Title
+## Title
 
 The title tag let us set the title of the web page we are working on:
 
@@ -169,7 +169,7 @@ The purpose of this element is to rpovide navigation links.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034569-9b935520-27b4-4a61-89bc-3ab61470c3bb.png)
 
-# UL
+## UL
   
 This element represents an unordered list.
   
@@ -185,7 +185,7 @@ This element represents an unordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034667-90fbfea9-d5c9-4da3-b199-d7687200b5a9.png)
   
-# OL
+## OL
   
 This element represents an ordered list.
   
@@ -201,7 +201,7 @@ This element represents an ordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034760-3ee2203d-0092-443b-88d9-1f9b1ebcb60b.png)
   
-# LI
+## LI
   
 This is a plain item to be used inside of a list.
   
