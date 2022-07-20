@@ -407,15 +407,12 @@ In CSS layout, we will find how to distribute the size of different graphic elem
 3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#justify-content)
 4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
 5. [`align-items`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
-6. [`align-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-content)
-7. [`column-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#column-gap)
-8. [`row-gap`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#row-gap)
-9. [`margin`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#margin)
-9. [`padding`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#padding)
+6. [`margin`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#margin)
+7. [`padding`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#padding)
 
 ### display
 
-This CSS property as it is may have different use-cases. But for our purposes we will only focus on the most relevant layout values: `flex` and `grid`. This property tells the container how should display its children.
+This CSS property as it is may have different use-cases. But for our purposes we will only focus on the most relevant layout values: `flex` and `grid`. This property tells the container how should display its children. In this course, we will not study `grid` deeply.
 
 **Examples:**
 
@@ -534,13 +531,214 @@ What about if we set each `flex` property to `2`? Now we would end with flex `2`
 ![image](https://user-images.githubusercontent.com/58167190/180073692-eb00b280-6959-44f6-8799-b5de4ef9e0bb.png)
 
 ### flex-direction
+  
+This property allow us to change the direction of the flex children items. Can be `row`, `column` and their reverse variants `row-reverse` and `column-reverse`.
+  
+**Example:**
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    flex-direction: column;
+  "
+>
+  <div style="background-color: red; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; flex: 2;">
+    <text>Hello there</text>
+  </div>
+</div>  
+```
+ 
+![image](https://user-images.githubusercontent.com/58167190/180074467-ebeb5e7b-a903-4c66-98d6-e6f38ca2ac84.png)
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    flex-direction: row-reverse;
+  "
+>
+  <div style="background-color: red; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; flex: 2;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; flex: 2;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180074652-5af37794-87c5-484c-b772-e8bba4389d55.png)
+  
 ### justify-content
+  
+Let us justify `x-axis` the content of the `flex-container`. Accepts `center`, `flex-start`, `flex-end` and more.
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    justify-content: center;
+  "
+>
+  <div style="background-color: red;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink;">
+    <text>Hello there</text>
+  </div>
+</div>  
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180075601-a4fe30a3-bd8d-4b02-907f-f62c840186bc.png)
+
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    justify-content: flex-end;
+  "
+>
+  <div style="background-color: red;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink;">
+    <text>Hello there</text>
+  </div>
+</div>  
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180075737-2ea7289b-ea94-4628-a1f5-f23b5963f6e3.png)
+  
 ### align-items
-### align-content
-### column-gap
-### row-gap
+  
+Let us align the `flex` items in the `y-axis`. Accepts `center`, `flex-start`, `flex-end` and more.
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    align-items: flex-end;
+  "
+>
+  <div style="background-color: red;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink;">
+    <text>Hello there</text>
+  </div>
+</div>  
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180076134-13874462-fc3b-4ef9-a7af-5d02c149cb04.png)
+
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    align-items: center;
+  "
+>
+  <div style="background-color: red;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180076306-e2f3e4b6-c3d9-483b-b54e-d7561f074736.png)
+  
 ### margin
+  
+This property let us set a margin (space into the given direction) to an element. It can be on the `right`, `left`, `top` and `bottom`.
+  
+**Example:**
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    align-items: center;
+  "
+>
+  <div style="background-color: red; margin-top: 40px;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; margin-bottom: 50px;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; margin-left: 20px;">
+    <text>Hello there</text>
+  </div>
+</div>
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180077445-1e775202-150a-4f29-a9fb-efec50f83593.png)
+  
 ### padding
+
+This property let us assign a padding (a space that the item itself will take as extra) to an item.
+  
+**Example:**
+  
+```
+<div
+  style="
+    display: flex;
+    background-color: yellow;
+    height: 200px;
+    align-items: center;
+  "
+>
+  <div style="background-color: red; padding-top: 40px;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: blue; padding-bottom: 50px;">
+    <text>Hello there</text>
+  </div>
+  <div style="background-color: pink; padding-left: 20px;">
+    <text>Hello there</text>
+  </div>
+</div>  
+```
+  
+![image](https://user-images.githubusercontent.com/58167190/180077736-de792e03-c8bc-425a-a9fa-f382c956bcb3.png)
   
 ## Module Activity
 
