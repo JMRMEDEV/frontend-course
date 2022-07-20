@@ -4,18 +4,18 @@
 
 HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as:
 
-1. `<title>`.
-2. `<body>`.
-3. `<header>`.
-4. `<footer>`.
-5. `<section>`.
-6. `<p>`.
-7. `<div>`.
-8. `<img>`.
-9. `<nav>`.
-10. `<ul>`.
-11. `<ol>`.
-12. `<li>`.
+1. [`<title>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title).
+2. [`<body>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#body).
+3. [`<header>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#header).
+4. [`<footer>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#footer).
+5. [`<section>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#section).
+6. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
+7. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
+8. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
+9. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
+10. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
+11. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
+12. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
 
 And many others...
 
