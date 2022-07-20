@@ -6,6 +6,7 @@
 
 - [HTML Tags](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#html-tags)
 - [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#module-activity)
+- [Sources](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#sources)
 
 ## HTML tags
 
@@ -223,8 +224,6 @@ This is a plain item to be used inside of a list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034773-dcc5b475-71da-49f4-97c1-da38a4d119df.png)
 
-Sources: [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/HTML).
-
 ## Module activity
 
 Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following requirements:
@@ -378,5 +377,9 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
 **Resolution Notes:**
 
 Please notice that `style` property is used multiple times. At this part of the course, is not mandatory to worry about this property. The only thing you need to know, is that helps us providing some styles to our tags and that when having large images, this property must be used to properly resizing them as shown in the example. Also `<b>` and `<i>` tags are used, representing **bold** and *italic* texts, respectively. The output here is shown as cropped screenshots, the real output is a scrollable page.
+
+## Sources
+
+- [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 
