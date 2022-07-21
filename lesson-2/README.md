@@ -152,10 +152,10 @@ The CSS colors can be specified in different manners:
   
 Allow us to change the "front" color of an element. Mostly used for texts, icons and more.
   
-**Example: **
+**Example:**
   
 ```
-<div style="background-color: #248f03">
+<div style="color: #248f03">
   <text style="color: white">Hello there!</text>
 </div>  
 ```
