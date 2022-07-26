@@ -86,7 +86,7 @@ So far, in the examples that we have seen that use **HTML and CSS** we use **sta
 
 What about showing a different text from *Some cool text*? We should use **JavaScript**. 
 
-The first thing that we need to work with **JavaScript** in these exercises, is to create a **JavaScript** (`.js`) file. Let's go to our favorite **editor** for working with **JavaScript**. Let's use [**Code Sandbox**](https://codesandbox.io) for our example. Let's create a new folder called `js` and inside of it, lets create a `script.js`.
+The first thing that we need to work with **JavaScript** in these exercises, is to create a **JavaScript** (`.js`) file. Let's go to our favorite **editor** for working with **JavaScript**. Let's use [**Code Sandbox**](https://codesandbox.io) for our example. Let's create a new folder called `js` and inside of it, lets create a `script.js` (this example assumpts that you already have your HTML file).
 
 ![image](https://user-images.githubusercontent.com/58167190/180932184-7d693b1d-0ff4-4a0f-9a11-3ed65827f0bc.png)
 
@@ -118,13 +118,74 @@ const getFullName = (firstName, lastName) => {
 
 // Main function for calling another functions
 const main = () => {
-  getFullName();
+  getFullName("John", "Doe");
 };
 
 main();
 ```
 
+Firstly, in the **HTML** file you might have noticed a new **tag** **`<script>`**. The first think to know, is that this tag is not *self-closing*, this means that we **could not** make something like this: **`<script />`**. Also is important for you to know, that we could actually write our **JavaScript** code inside of the `<script>` tag. However, **it is not the recommended way to proceed**. Just to clarify, here is an example:
 
+```
+<script>
+const getFullName = (firstName, lastName) => {
+  return firstName + " " + lastName;
+};
+
+getFullName("John", "Doe");
+</script>
+```
+
+This would be technically correct, and the browser would recognize it. But as said **is not the best practice**. This is the reason about why we use the property `src` in the `<script>` tag as in the `.html` example (`<script src="js/script.js"></script>`) which tells the browser use the file `script.js`, located in the folder `js` as the script for this file. In most of the sources that you might find, it is **recommended to isolate the scripts from the html**.
+
+Now, you may have noticed that the **`<body>`** tag has an **`onload`** property. This property tells the browser to load the mentioned function as soon as the body loads, so that is the first thing that we would execute. In the example that is referenced, we use the function `main()` in the **`onload`** tag. That means that main() is the first thing to be executed inside the `script.js` file. As we can see, our `main()` function calls the `getFullName()` function, that receives two parameters and return them to the place where is called.
+
+Is very likely that if you have programmed before, you might have used *printing functions*, like `printf()` for `C`, `System.WriteLine()` in `C#`, `print()` in `Python` and so on. These printing functions allow us to show in the screen something that we want, like a message, options or the values of different variables. So *JavaScript* also has its printing function which is:
+
+`console.log()`
+
+Some of the greatest features of this function in `JavaScript` is that receives virtually anything as a parameter.
+
+Let's put this in practice.
+
+In our `script.js` file we will perform some modifications.
+
+```
+const getFullName = (firstName, lastName) => {
+  return firstName + " " + lastName;
+};
+
+// Main function for calling another functions
+const main = () => {
+  let fullName = "";
+  fullName = getFullName("John", "Doe");
+  console.log(fullName);
+};
+
+main();
+```
+
+With these modifications we are doing the following:
+
+1. Create a `fullName` variable initialized to an empty string (`""`).
+2. Assigning the responde of the `getFullName()` function to this variable by sending two parameters (`"John", "Doe"`).
+3. Showing in the browser console the value of the `fullName` variable.
+
+Let's see how does this look in our **CodeSandbox** project:
+
+![image](https://user-images.githubusercontent.com/58167190/181112162-de4925b1-45ac-48b2-8a51-f073516472c8.png)
+
+You might be wondering where is the output of our function.
+
+If you go down in the UI of **CodeSanbox**, you will find a **console** button. Just click and bingo!
+
+![image](https://user-images.githubusercontent.com/58167190/181112448-af0a3fe0-7b40-45bc-8b1e-f43229bc3d3a.png)
+
+In a regular browser, like **Chrome**, **Firefox** or **Edge** you can show the content of this console by pressing **`F12`** on your keyboard. Of course, this console is way more robust and have many features, but still, can be used for testing purposes.
+
+![image](https://user-images.githubusercontent.com/58167190/181112734-843a4dd4-f361-48dd-8135-342daa258899.png)
+
+Example of **Microsoft's Chromium Edge** console.
 
 ## Sources
 
