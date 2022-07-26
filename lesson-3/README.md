@@ -6,9 +6,9 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 
 ## Module Content
 
-- [**JavaScript Pros and Cons**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3#javascript-pros-and-cons)
-- [**HTML and JavaScript**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3#html-and-javascript)
-- [**Sources**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3#sources)
+- [**JavaScript Pros and Cons**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3.md#javascript-pros-and-cons)
+- [**HTML and JavaScript**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3.md#html-and-javascript)
+- [**Sources**](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3.md#sources)
 
 ## JavaScript Pros and Cons
 
