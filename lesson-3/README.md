@@ -187,6 +187,137 @@ In a regular browser, like **Chrome**, **Firefox** or **Edge** you can show the 
 
 Example of **Microsoft's Chromium Edge** console.
 
+Okay, we have already used some functions in here, but... **What are functions?**
+
+**Functions** are a special programming structure meant to perform a defined operation or task. We used our `main()` and `getFullName()` function, from which objetives were to call other functions and printing and returning a full name from a first name and a last name, respectively.
+
+In **JavaScript**, functions are defined in two different ways:
+
+1. By the **arrow function `() => {}`** notation.
+2. By using the reserved word **function**.
+
+The syntaxis of the function would look like this:
+
+```
+const myNewFunction = (myParameter1, myParamter2, ..., myParameterN) => {
+  // Content of the function
+  // Perhaps a return
+}
+```
+
+Or probably like this:
+
+```
+function myNewFunction (myParameter1, myParamter2, ..., myParameterN) {
+  // Content of the function
+  // Perhaps a return
+}
+```
+
+If well both ways are correct, at least for this course, we will be using the **arrow function `() => {}`** notation.
+
+Did you notice the slashes (`//`) so far in the code? As in many different programming languages, we can use some symbols to indicate in our program that some section of the code should not be taken as statements. Probably we just want to document, take notes or say something useful about our code. For that matter, in **JavaScript**, the `//` and `/**/` symbols are used.
+
+**Examples:**
+
+```
+// This is a test function
+const myFunction = (text) => {
+  return text + " another text";
+}
+```
+
+```
+/*
+ * Function test meant for performing some operation. Please
+ * notice that this is an option for multiline commentaries
+ * inside of the code.
+ */
+const myFunction = (text) => {
+  return text + " another text";
+}
+```
+
+As shown in the examples, we called our **main** function `main()`, trying to emulate a main function that is used in other programming language and having that name for clearence. However, the function can take any name that we define.
+
+```
+const thisIsADumbNameFunctionThatIsNotRelatedToItsFunctionality = (number1, number2) => {
+  return number1 + number2;
+}
+```
+
+Of course makes any sense to call a function with a different name from one that describes functionality, so correcting the example, we would have:
+
+```
+const numberAddition = (number1, number2) => {
+  return number1 + number2;
+}
+```
+
+As already said, **JavaScript** give us a lot of freedom when coding, so also, we can call the **received parameters** of the function any way we want. Using the last example:
+
+```
+const numberAddition = (ball1, yelloJacketAndJohn) => {
+  return ball1 + yelloJacketAndJohn;
+}
+```
+
+But again, for clearance and to follow the best practice, the best choice is to give the parameters names that are actually related to their use in a given function.
+
+Let's quickly try to change our original HTML + **JavaScript** example a little and test it. We will be using the `numberAddition()` example function. in our **`script.js`** example we will have:
+
+```
+const getFullName = (firstName, lastName) => {
+  return firstName + " " + lastName;
+};
+
+const numberAddition = (number1, number2) => {
+  return number1 + number2;
+}
+
+// Main function for calling another functions
+const main = () => {
+  let additionResult = 0;
+  additionResult = numberAddition(7, 12);
+  console.log(additionResult);
+};
+
+main();
+```
+
+Our console now should show us the following:
+
+![image](https://user-images.githubusercontent.com/58167190/181134261-009dae52-b52c-4fe9-9200-6be2d1922306.png)
+
+Also notice, that for these examples we are using variables for being clear about the examples, however, we could get the same output without even having to declare a variable by simply doing:
+
+```
+const getFullName = (firstName, lastName) => {
+  return firstName + " " + lastName;
+};
+
+const numberAddition = (number1, number2) => {
+  return number1 + number2;
+}
+
+// Main function for calling another functions
+const main = () => {
+  console.log(numberAddition(7, 12));
+};
+
+main();
+```
+
+With this last implementation, we are *"chaining functions"*. This means, using the result of a function, as a parameter for a different function. This can be simply done, but remember that for this to work **we have to keep track of the types that we are using**.
+
+So far so good, right? Right now we are experts on creating different functionalities for our **JavaScript** code and we perfectly understand how to **call functions**, **send parameters** and **printing the results**. But...
+
+![image](https://user-images.githubusercontent.com/58167190/181134772-54d71e0b-20c9-41be-94d5-2d1f7bc6a92a.png)
+
+Of course... Whats does anything of this has to do with **HTML and CSS**?
+
+That's a great question. So far, we tell **HTML** to load and execute a script. The script does an isolated task and that's it. But when we think about a decent website, the user interactions usually represents specific behaviour like increasing a like count, changing the site theme, moving between pages and so on. Now, our next step is to **Program JavaScript for interacting with HTML**.
+
 ## Sources
 
 - [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
