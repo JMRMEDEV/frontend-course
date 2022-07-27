@@ -318,6 +318,106 @@ Of course... Whats does anything of this has to do with **HTML and CSS**?
 
 That's a great question. So far, we tell **HTML** to load and execute a script. The script does an isolated task and that's it. But when we think about a decent website, the user interactions usually represents specific behaviour like increasing a like count, changing the site theme, moving between pages and so on. Now, our next step is to **Program JavaScript for interacting with HTML**.
 
+The great magic word for this is **`document.getElementById()`**, which gets a reference to an HTML element through its id. But... What is an id?
+
+Well, in HTML, the tags have the **`id`** attribute, that as the name says, is used to identificate each element. We could have different elements with the same id, which would translate in unexpected behaviour. The best thing is to assign a unique **id** to each element. This **id** is recommended to be related to the element itself. For example **`id=awesome-header-1`**. Let's see an example:
+
+```
+<h1 id="header1">Hi there!</h1>
+```
+
+What about if we would like to **programatically** change the children of a HTML tag? In the last example we can see that `Hi there` is the children of h1. Like we said, this is static. Let's make the children change, based on the **JavaScript** program.
+
+```
+const main = () => {
+  let header1 = document.getElementById("header1");
+  header1.innerHTML = "Bonjour";
+}
+```
+
+In this piece of code, we are assigning the content of the HTML tag with the **identifier** `header1` to the *`header1`* variable. Now, the **`header1`** variable, is like an HTML element, with all of its properties, but as a **program entity**. Now is not only a tag, but an object in the memory containing the information of such tag. In this order of ideas, *`innerHTML`* represents the children of the HTML tag. So, by doing ` header1.innerHTML = "Bonjour";` we are telling our browser to assign `"Bonjour"` as the children of the `<h1>` tag.
+
+If we take a look to our **CodeSandbox** browser, we should be seeing something like the following:
+
+![image](https://user-images.githubusercontent.com/58167190/181389713-f06879fe-dc43-464e-b5a3-8915db16d393.png)
+
+Great! Now we are capable of affecting the content of the HTML based on our **JavaScript** program. But... What about CSS? Well, in a similar manner, we can change the style property of any element **programatically**. Let's take a look:
+
+```
+const main = () => {
+  let header1 = document.getElementById("header1");
+  header1.innerHTML = "Bonjour";
+  header1.style.backgroundColor = "blue";
+};
+```
+
+In this example, just with accessing the `.style.backgroundColor`, we are capable of changing such property in the HTML output through **JavaScript**. This same logic can be applied to basically any property of the style. Now, our output should look like this:
+
+![image](https://user-images.githubusercontent.com/58167190/181390224-065da5d3-fff5-482e-ae38-57513ecab302.png)
+
+Now... Let's make this more interesting. As I have been saying, in a **professional application** the user interactions are those that make things happen. So practically one of the most common interactions, is a **click**. And... How do we perform a click? Well, for that, we need a button, which is declared in **HTML** through the `<button>` tag. Let's go coding.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Example</title>
+    <script src="js/script.js"></script>
+  </head>
+  <body onload="main()">
+    <h1 id="header1"></h1>
+    <button onclick="handleOnClick()" id="magic-button">Magic Click!</button>
+  </body>
+</html>
+```
+
+Our **HTML** should look like this now. Please notice the use of `<button>` tag, that has as children the `string` "Magic Click!". Also, this tag has a `onclick` property, which requires a function that is going to be triggered anytime the **event is detected**. For this to make sense, let's change our **JavaScript** too.
+
+```
+var headerColor = "red";
+
+const handleOnClick = () => {
+  let header1 = document.getElementById("header1");
+  if (headerColor === "red") {
+    headerColor = "blue";
+  } else {
+    headerColor = "red";
+  }
+  header1.style.backgroundColor = headerColor;
+};
+
+const main = () => {
+  let header1 = document.getElementById("header1");
+  header1.innerHTML = "Bonjour";
+  header1.style.backgroundColor = "blue";
+};
+```
+
+In here, we defined the **`handleOnClick()`** function, which receives any parameter. It makes a reference to our header1 element (`<h1>`) now, it use a **conditional statement**. What is this? Nothing but a way to control the flow of our program. It basically says *'if this condition is met, then, do this'*. So in here, we are saying, if the `headerColor` is equal to `"red"`, change tha value of the `headerColor` variable to `"blue"`. But we also can see an **`else`** statement which controlls what to do if the **`if`** condition is not met. In this case, we would be saying in the whole expression *'if headerColor is equal to red, change it to blue. Otherwise, change it to red'*. This means, that every time the user clicks on the button, the color will change. 
+
+Also notice that at the top of our `js` file now we have a variable defined through `var`. By using `var` we are indicating to the browser that this variable can be accessed in many places and not only the place where is defined. Also notice that this variable, `headerColor` is outside of any function, which turns it into a **global variable**. A **global variable** is a special type of variable that can be accesed in practically any place. By folowwinf the last steps, we should have something like the following:
+
+Before the user click:
+
+![image](https://user-images.githubusercontent.com/58167190/181391669-f58fd766-0e8d-4278-a18c-4c9c0560d9dc.png)
+
+After the user click:
+
+![image](https://user-images.githubusercontent.com/58167190/181391694-a0be5213-dd94-4d76-8f5e-628a8a3fcc45.png)
+
+And clicking again:
+
+![image](https://user-images.githubusercontent.com/58167190/181391738-92b92d65-5c2f-48c3-a888-409eea7fb661.png)
+
+So with this, now we have reviewed the concepts together: **HTML**, **JavaScript** and **CSS**.
+
+## Module Activity
+
+We are going to build a basic functional calculator with HTML + CSS and JavaScript.
+
 ## Sources
 
 - [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
