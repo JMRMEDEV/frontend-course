@@ -58,7 +58,7 @@ At first sight, might seem like **JavaScript** is easier, since we do not have t
 const exampleFunction = async (example) => {
   const response = await getAPIcallData(example);
   console.log(response);
-}
+};
 ```
 
 In this case, we don't know what we are receiving as example, and later we don't know what information we are receiving as a response. In this case we only want to display the received data, so we don't mind about the content. As we don't mind, we don't have to declare any explicit type so we could say this is *less work*. **JavaScript** give us this amount of freedom. But in my personal experience this is also its ***worst feature***. Since by not knowing the type, our application might result in total chaos.
@@ -202,7 +202,7 @@ The syntaxis of the function would look like this:
 const myNewFunction = (myParameter1, myParamter2, ..., myParameterN) => {
   // Content of the function
   // Perhaps a return
-}
+};
 ```
 
 Or probably like this:
@@ -211,7 +211,7 @@ Or probably like this:
 function myNewFunction (myParameter1, myParamter2, ..., myParameterN) {
   // Content of the function
   // Perhaps a return
-}
+};
 ```
 
 If well both ways are correct, at least for this course, we will be using the **arrow function `() => {}`** notation.
@@ -224,7 +224,7 @@ Did you notice the slashes (`//`) so far in the code? As in many different progr
 // This is a test function
 const myFunction = (text) => {
   return text + " another text";
-}
+};
 ```
 
 ```
@@ -235,7 +235,7 @@ const myFunction = (text) => {
  */
 const myFunction = (text) => {
   return text + " another text";
-}
+};
 ```
 
 As shown in the examples, we called our **main** function `main()`, trying to emulate a main function that is used in other programming language and having that name for clearence. However, the function can take any name that we define.
@@ -243,7 +243,7 @@ As shown in the examples, we called our **main** function `main()`, trying to em
 ```
 const thisIsADumbNameFunctionThatIsNotRelatedToItsFunctionality = (number1, number2) => {
   return number1 + number2;
-}
+};
 ```
 
 Of course makes any sense to call a function with a different name from one that describes functionality, so correcting the example, we would have:
@@ -251,7 +251,7 @@ Of course makes any sense to call a function with a different name from one that
 ```
 const numberAddition = (number1, number2) => {
   return number1 + number2;
-}
+};
 ```
 
 As already said, **JavaScript** give us a lot of freedom when coding, so also, we can call the **received parameters** of the function any way we want. Using the last example:
@@ -259,7 +259,7 @@ As already said, **JavaScript** give us a lot of freedom when coding, so also, w
 ```
 const numberAddition = (ball1, yelloJacketAndJohn) => {
   return ball1 + yelloJacketAndJohn;
-}
+};
 ```
 
 But again, for clearance and to follow the best practice, the best choice is to give the parameters names that are actually related to their use in a given function.
@@ -273,7 +273,7 @@ const getFullName = (firstName, lastName) => {
 
 const numberAddition = (number1, number2) => {
   return number1 + number2;
-}
+};
 
 // Main function for calling another functions
 const main = () => {
@@ -298,7 +298,7 @@ const getFullName = (firstName, lastName) => {
 
 const numberAddition = (number1, number2) => {
   return number1 + number2;
-}
+};
 
 // Main function for calling another functions
 const main = () => {
