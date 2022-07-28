@@ -18,7 +18,7 @@ Knowing and understanding this library will take you closer to your job goals.
 
 1. [HTML](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md)
 2. [CSS](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
-3. JavaScript
+3. [JavaScript](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3/README.md)
 4. Node.js
 5. TypeScript (introduction)
 6. APIs
