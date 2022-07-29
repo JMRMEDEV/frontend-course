@@ -416,7 +416,7 @@ So with this, now we have reviewed the concepts together: **HTML**, **JavaScript
 
 ## Module Activity
 
-We are going to build a basic functional calculator with HTML + CSS and JavaScript.
+We are going to build a basic functional calculator with HTML + CSS and JavaScript. It must has the addition, substraction, division and multiplication capabilities. Free layout.
 
 ## Sources
 
