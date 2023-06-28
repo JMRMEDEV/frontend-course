@@ -23,7 +23,7 @@ Knowing and understanding this library will take you closer to your job goals.
 5. Node.js
 6. APIs
 7. Asynchronus functions
-8. React Framework
+8. React Library
 9. React Key Concepts
 10. VS Code
 11. Postman
