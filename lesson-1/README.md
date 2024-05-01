@@ -43,9 +43,9 @@ This tag represents the content of a web page. There can be only one body inside
 
 ```
 <body>
-  <text>
+  <p>
     This is an example test
-  </text>
+  </p>
 </body>
 ```
 
@@ -60,7 +60,7 @@ The header represents introductory content. Please notice that this tag does not
   <h1>
     This is a header example
   </h1>
-  <text>And this is a random text</text>
+  <p>And this is a random text</p>
 </body>
 ```
 
@@ -77,7 +77,7 @@ In a webpage, this element typically contains information about the author, copy
     <h1>
       This is a header example
     </h1>
-    <text>And this is a random text \n</text>
+    <p>And this is a random text \n</p>
     <footer>
       In this place you will find <a href="https://www.google.com">useful links</a>
     </footer>
@@ -99,13 +99,13 @@ This element represents a section of a document. It should have a heading elemen
     <h2>
       This is a header example
     </h2>
-    <text>And this is a random text</text>
+    <p>And this is a random text</p>
   </section>
   <section>
     <h2>
       This is a header example 2
     </h2>
-    <text>And this is a random text 2</text>
+    <p>And this is a random text 2</p>
   </section>
 </body>
 ```
@@ -151,7 +151,7 @@ This item is pretty self-explanatory. It does render an image with a given image
 
 ```
 <div>
-  <text> In here you will find an image </text>
+  <p> In here you will find an image </p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="img-example"/>
 </div>
 ```
@@ -171,7 +171,7 @@ The purpose of this element is to rpovide navigation links.
     <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
     <a href="https://www.youtube.com/">Youtube</a>
   </nav>
-  <text>This is different from the navbar</text>
+  <p>This is different from the navbar</p>
 <div>
 ```
 
@@ -286,9 +286,9 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                   tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin
                   olive oil.
                </p>
-               <text>
+               <p>
                You can choose for this pizza among our delicious crusts:
-               <text>
+               <p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -311,9 +311,9 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
 
                   The popularity of pepperoni pizza had only started to rise in the 1950s. Nowadays, beef pepperoni pizza is the most popular pizza variety, but there are also versions such as fish pepperoni pizza and port pepperoni pizza. The preparation varies from one state to another, but the popularity of this pizza has made it a staple across the United States, and it’s usually prepared simply with mozzarella, tomato sauce, and pepperoni.
                </p>
-               <text>
+               <p>
                You can choose for this pizza among our delicious crusts:
-               <text>
+               <p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -330,9 +330,9 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                <p>
                   <b><i>Mushroom pizza</i></b> has a thin and crispy crust, right amount of mushrooms and a combination of spices which turns into a delicious Italian pizza.
                </p>
-               <text>
+               <p>
                You can choose for this pizza among our delicious crusts:
-               <text>
+               <p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -350,9 +350,9 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                <p>
                   <b><i>Mexican Pizza</i></b> start out with a crisp flour tortilla topped with refried beans, a seasoned ground beef mixture and another crispy tortilla. Zesty enchilada sauce is then spread over the top followed by a sprinkling of cheddar and pepper-jack cheese, diced tomato, green onion and olives. To make the cheese all melty and bubbly, the pizza is placed in the oven for 5 minutes, creating a warm, gooey Mexican Pizza ready to be devoured!
                </p>
-               <text>
+               <p>
                You can choose for this pizza among our delicious crusts:
-               <text>
+               <p>
                <ul>
                   <li>Thick Crust Pizza.</li>
                   <li>Wrapping It Up.</li>
