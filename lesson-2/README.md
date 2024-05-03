@@ -97,7 +97,7 @@ A case that we already know, based on our previous examples. An inline style may
 <!DOCTYPE html>
 <html>
 <body>
-  <h1 style="color:blue;text-align:center;">This is a heading</h1>
+  <h1 style="color:blue;p-align:center;">This is a heading</h1>
   <p style="color:red;">This is a paragraph.</p>
 </body>
 </html>
@@ -119,9 +119,9 @@ When dealing with daily frontend tasks, is very likely to face the following typ
 6. [`border-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-style)
 7. [`border-width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-width)
 8. [`border-color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-color)
-9. [`text-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-decoration-line)
+9. [`p-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#p-decoration-line)
 10. [`font-size`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-size)
-11. [`text-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-align)
+11. [`p-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#p-align)
 12. [`font-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-style)
 13. [`font-weight`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-weight)
   
@@ -142,7 +142,7 @@ The CSS colors can be specified in different manners:
   
 ```
 <div style="background-color: red">
-  <text>Some cool text</text>
+  <p>Some cool p</p>
 </div>  
 ```
   
@@ -150,13 +150,13 @@ The CSS colors can be specified in different manners:
   
 ### color
   
-Allow us to change the "front" color of an element. Mostly used for texts, icons and more.
+Allow us to change the "front" color of an element. Mostly used for ps, icons and more.
   
 **Example:**
   
 ```
 <div style="color: #248f03">
-  <text style="color: white">Hello there!</text>
+  <p style="color: white">Hello there!</p>
 </div>  
 ```
   
@@ -170,10 +170,10 @@ Self explanatory. Please notice that the **units** can be `px`, `rem`, `%` and m
   
 ```
 <div style="background-color: green; width: 400px;">
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>
 <div style="background-color: red; width: 200px;">
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div> 
 ```
   
@@ -187,10 +187,10 @@ Self explanatory.
   
 ```
 <div style="background-color: green; height: 400px;">
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>
 <div style="background-color: red; height: 200px;">
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div> 
 ```
   
@@ -204,7 +204,7 @@ This property indicates how rounded do we want our element.
   
 ```
 <div style="background-color: green; height: 50px; border-radius: 10px;">
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>
 ```
   
@@ -226,7 +226,7 @@ This element indicates how do we want to show the border line in case wanted. Mu
     border-width: 5px;
   "
 >
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>  
 ```
   
@@ -248,7 +248,7 @@ This property describes how wide do we want our borders.
     border-width: 5px;
   "
 >
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>  
 ```
   
@@ -271,22 +271,22 @@ This property allow us to set a color to the border. Must be used with `border-w
     border-color: red;
   "
 >
-  <text style="color: rgb(255, 255, 255);">Hello there!</text>
+  <p style="color: rgb(255, 255, 255);">Hello there!</p>
 </div>  
 ```
   
 ![image](https://user-images.githubusercontent.com/58167190/180064981-0fc6caa6-2e59-403c-9a60-56f4962bf1c0.png)
   
-### text-decoration-line
+### p-decoration-line
   
-This property allow us to set different styles to a determined text. Some possible values are `underline`, `line-through`, `overline`, etc.
+This property allow us to set different styles to a determined p. Some possible values are `underline`, `line-through`, `overline`, etc.
   
 **Example:**
   
 ```  
 <div>
-  <text style="text-decoration: underline;">Hello there!</text>
-  <text style="text-decoration: line-through;">Hello there!</text>
+  <p style="p-decoration: underline;">Hello there!</p>
+  <p style="p-decoration: line-through;">Hello there!</p>
 </div>
 ```
   
@@ -300,23 +300,23 @@ Self explanatory.
   
 ```
 <div>
-  <text style="font-size: 10px;">Size1</text>
-  <text style="font-size: 15px;">Size2</text>
-  <text style="font-size: 20px;">Size3</text>
+  <p style="font-size: 10px;">Size1</p>
+  <p style="font-size: 15px;">Size2</p>
+  <p style="font-size: 20px;">Size3</p>
 </div>  
 ```
   
 ![image](https://user-images.githubusercontent.com/58167190/180065760-791067f4-6c8f-4111-b896-2133ef0f9006.png)
   
-### text-align
+### p-align
 
-This property allow us to distribute the text the way we want. Possible values `center`, `left` and `right`.
+This property allow us to distribute the p the way we want. Possible values `center`, `left` and `right`.
   
 **Example:**
   
 ```
 <div>
-  <p style="text-align: left;">
+  <p style="p-align: left;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -325,7 +325,7 @@ This property allow us to distribute the text the way we want. Possible values `
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   </p>
-  <p style="text-align: center;">
+  <p style="p-align: center;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -334,7 +334,7 @@ This property allow us to distribute the text the way we want. Possible values `
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   </p>
-  <p style="text-align: right;">
+  <p style="p-align: right;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -350,15 +350,15 @@ This property allow us to distribute the text the way we want. Possible values `
   
 ### font-style
   
-This property allow us to change the style of a text, possible values are `normal`, `italic`, `oblique`.
+This property allow us to change the style of a p, possible values are `normal`, `italic`, `oblique`.
   
 **Example:**
   
 ```
 <div>
-  <text style="font-style: normal;">test1</text>
-  <text style="font-style: italic;">test2</text>
-  <text style="font-style: oblique;">test3</text>
+  <p style="font-style: normal;">test1</p>
+  <p style="font-style: italic;">test2</p>
+  <p style="font-style: oblique;">test3</p>
 </div>
 ```
   
@@ -366,15 +366,15 @@ This property allow us to change the style of a text, possible values are `norma
   
 ### font-weight
   
-This property let us choose how **bold** do we want our texts.
+This property let us choose how **bold** do we want our ps.
   
 **Example:**
   
 ```
 <div>
-  <text style="font-weight: bold;">test1</text>
-  <text style="font-weight: regular;">test2</text>
-  <text style="font-weight: bolder;">test3</text>
+  <p style="font-weight: bold;">test1</p>
+  <p style="font-weight: regular;">test2</p>
+  <p style="font-weight: bolder;">test3</p>
 </div>
 ```
   
@@ -419,13 +419,13 @@ This CSS property as it is may have different use-cases. But for our purposes we
 ```
 <div style="display: flex; background-color: yellow; height: 200px;">
   <div style="background-color: red;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -452,7 +452,7 @@ This CSS property as it is may have different use-cases. But for our purposes we
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 20px;
         font-size: 30px;
-        text-align: center;
+        p-align: center;
       }
     </style>
   </head>
@@ -483,13 +483,13 @@ This property tell us how much proportion will take the child of a `flex` contai
 ```
 <div style="display: flex; background-color: yellow; height: 200px;">
   <div style="background-color: red; flex: 1;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; flex: 1;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; flex: 1;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -500,13 +500,13 @@ But... What would happen if we set a `flex: 2` to one of those inner `div`s? Wel
 
 ```
 <div style="background-color: red; flex: 2;">
-  <text>Hello there</text>
+  <p>Hello there</p>
 </div>
 <div style="background-color: blue; flex: 1;">
-  <text>Hello there</text>
+  <p>Hello there</p>
 </div>
 <div style="background-color: pink; flex: 1;">
-  <text>Hello there</text>
+  <p>Hello there</p>
 </div>
 ```
 
@@ -517,13 +517,13 @@ What about if we set each `flex` property to `2`? Now we would end with flex `2`
 ```
 <div style="display: flex; background-color: yellow; height: 200px;">
   <div style="background-color: red; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -546,13 +546,13 @@ This property allow us to change the direction of the flex children items. Can b
   "
 >
   <div style="background-color: red; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>  
 ```
@@ -569,13 +569,13 @@ This property allow us to change the direction of the flex children items. Can b
   "
 >
   <div style="background-color: red; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; flex: 2;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -596,13 +596,13 @@ Let us justify `x-axis` the content of the `flex-container`. Accepts `center`, `
   "
 >
   <div style="background-color: red;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>  
 ```
@@ -619,13 +619,13 @@ Let us justify `x-axis` the content of the `flex-container`. Accepts `center`, `
   "
 >
   <div style="background-color: red;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>  
 ```
@@ -646,13 +646,13 @@ Let us align the `flex` items in the `y-axis`. Accepts `center`, `flex-start`, `
   "
 >
   <div style="background-color: red;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>  
 ```
@@ -669,13 +669,13 @@ Let us align the `flex` items in the `y-axis`. Accepts `center`, `flex-start`, `
   "
 >
   <div style="background-color: red;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -698,13 +698,13 @@ This property let us set a margin (space into the given direction) to an element
   "
 >
   <div style="background-color: red; margin-top: 40px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; margin-bottom: 50px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; margin-left: 20px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>
 ```
@@ -727,13 +727,13 @@ This property let us assign a padding (a space that the item itself will take as
   "
 >
   <div style="background-color: red; padding-top: 40px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: blue; padding-bottom: 50px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
   <div style="background-color: pink; padding-left: 20px;">
-    <text>Hello there</text>
+    <p>Hello there</p>
   </div>
 </div>  
 ```
