@@ -97,7 +97,7 @@ A case that we already know, based on our previous examples. An inline style may
 <!DOCTYPE html>
 <html>
 <body>
-  <h1 style="color:blue;p-align:center;">This is a heading</h1>
+  <h1 style="color:blue;text-align:center;">This is a heading</h1>
   <p style="color:red;">This is a paragraph.</p>
 </body>
 </html>
@@ -438,7 +438,7 @@ This CSS property as it is may have different use-cases. But for our purposes we
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta htttext-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
     <style>
       .grid-container {
@@ -452,7 +452,7 @@ This CSS property as it is may have different use-cases. But for our purposes we
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 20px;
         font-size: 30px;
-        p-align: center;
+        text-align: center;
       }
     </style>
   </head>
