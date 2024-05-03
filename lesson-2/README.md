@@ -119,9 +119,9 @@ When dealing with daily frontend tasks, is very likely to face the following typ
 6. [`border-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-style)
 7. [`border-width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-width)
 8. [`border-color`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-color)
-9. [`p-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#p-decoration-line)
+9. [`text-decoration-line`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-decoration-line)
 10. [`font-size`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-size)
-11. [`p-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#p-align)
+11. [`text-align`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#text-align)
 12. [`font-style`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-style)
 13. [`font-weight`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#font-weight)
   
@@ -277,7 +277,7 @@ This property allow us to set a color to the border. Must be used with `border-w
   
 ![image](https://user-images.githubusercontent.com/58167190/180064981-0fc6caa6-2e59-403c-9a60-56f4962bf1c0.png)
   
-### p-decoration-line
+### text-decoration-line
   
 This property allow us to set different styles to a determined p. Some possible values are `underline`, `line-through`, `overline`, etc.
   
@@ -285,8 +285,8 @@ This property allow us to set different styles to a determined p. Some possible 
   
 ```  
 <div>
-  <p style="p-decoration: underline;">Hello there!</p>
-  <p style="p-decoration: line-through;">Hello there!</p>
+  <p style="text-decoration: underline;">Hello there!</p>
+  <p style="text-decoration: line-through;">Hello there!</p>
 </div>
 ```
   
@@ -308,7 +308,7 @@ Self explanatory.
   
 ![image](https://user-images.githubusercontent.com/58167190/180065760-791067f4-6c8f-4111-b896-2133ef0f9006.png)
   
-### p-align
+### text-align
 
 This property allow us to distribute the p the way we want. Possible values `center`, `left` and `right`.
   
@@ -316,7 +316,7 @@ This property allow us to distribute the p the way we want. Possible values `cen
   
 ```
 <div>
-  <p style="p-align: left;">
+  <p style="text-align: left;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -325,7 +325,7 @@ This property allow us to distribute the p the way we want. Possible values `cen
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   </p>
-  <p style="p-align: center;">
+  <p style="text-align: center;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -334,7 +334,7 @@ This property allow us to distribute the p the way we want. Possible values `cen
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     mollit anim id est laborum.
   </p>
-  <p style="p-align: right;">
+  <p style="text-align: right;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
