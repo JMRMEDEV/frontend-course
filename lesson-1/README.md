@@ -288,7 +288,7 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                </p>
                <p>
                You can choose for this pizza among our delicious crusts:
-               <p>
+               </p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -313,7 +313,7 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                </p>
                <p>
                You can choose for this pizza among our delicious crusts:
-               <p>
+               </p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -332,7 +332,7 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                </p>
                <p>
                You can choose for this pizza among our delicious crusts:
-               <p>
+               </p>
                <ul>
                   <li>Stuffed Crust.</li>
                   <li>Cracker Crust.</li>
@@ -352,7 +352,7 @@ Create a menu for a pizza restaurant (4 pizzas). It needs to fit the following r
                </p>
                <p>
                You can choose for this pizza among our delicious crusts:
-               <p>
+               </p>
                <ul>
                   <li>Thick Crust Pizza.</li>
                   <li>Wrapping It Up.</li>
