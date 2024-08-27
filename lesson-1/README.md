@@ -10,7 +10,33 @@
 
 ## HTML tags
 
-HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as:
+**HTML** uses "markup" to annotate text, images, and other content for display in a Web browser.
+
+The **HTML tags** usually have the following syntax (way to structure the code):
+
+```
+<tag attribute1="value1" attribute2="value2">
+  children
+</tag>
+```
+
+Where the **`tag`** can by **HTML tag** like `div`, `nav`, `h1`, the **`attribute`** are **properties** that can provide extra behavior to each tag and the **children** are all elements that are between the **openning tag** `<>` and the **closing tag** `</>`. Please note that the items used like `tag`, `attribute1`, `attribute2` and `children` are only for **exemplification purposes** and are not **actual HTML elements**.
+
+**Note**: The usual way the **tags** are structured is with an **openning tag** and a **closing tag**. 
+
+Like here:
+
+```
+<p>This is a text</p>
+```
+
+However there are **special cases** like the `img` tag, that is **self-closing**, `<img />` where the **oppening and closing tag** are **combined**.
+
+Usually the **attributes** go in the **openning tag**, like `<a href="https://wikipedia.org">Wikipedia</a>`, where **`href`** is an **attribute**.
+
+However, for the tags that are **self-closing**, the attributes go on the **self-closing** tag, before the symbol `/`, like in here: `<img src="htpps://wikipedia.org" />`, where `src` is an **attribute**.
+
+**HTML markup includes** special "elements" such as:
 
 1. [`<title>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title).
 2. [`<body>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#body).
@@ -24,20 +50,25 @@ HTML uses "markup" to annotate text, images, and other content for display in a 
 10. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
 11. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
 12. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
+13. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#a.md).
 
 And many others...
 
-### Title
+### title
 
-The title tag let us set the title of the web page we are working on:
+`<title></title>`
+
+The **title** tag let us set the title of the web page (the name of that will be displayed on the tab) we are working on:
 
 **Example:** `<title>HTML: HyperText Markup Language | MDN</title>`.
 
 ![image](https://user-images.githubusercontent.com/58167190/179821111-5622d54b-c7ea-484e-a1ea-f25689a8be52.png)
 
-### Body
+### body
 
-This tag represents the content of a web page. There can be only one body inside a web page.
+`<body></body>`
+
+This tag represents the full content of a web page. There can be only one body inside a web page. This tag should contain any other tags that are not part of the **metadata**.
 
 **Example:**
 
@@ -49,9 +80,11 @@ This tag represents the content of a web page. There can be only one body inside
 </body>
 ```
 
-### Header
+### header
 
-The header represents introductory content. Please notice that this tag does not break the content into different sections.
+`<header></header>`
+
+The **header** represents introductory content (we could think on magazines and newspaper, where each article has a main header to describe what does the article talk about). Please notice that this tag does not break the content into different **sections**.
 
 **Example:**
 
@@ -66,9 +99,11 @@ The header represents introductory content. Please notice that this tag does not
 
 ![image](https://user-images.githubusercontent.com/58167190/180033731-b25625bd-57d1-471f-ac9f-c0ba4d81f810.png)
 
-### Footer
+### footer
 
-In a webpage, this element typically contains information about the author, copyright or relevant links.
+`<footer></footer>`
+
+In a webpage, this element typically contains information about the author, copyright or relevant links. It is usually found at the bottom of a web page.
 
 **Example:**
 
@@ -86,9 +121,11 @@ In a webpage, this element typically contains information about the author, copy
 
 ![image](https://user-images.githubusercontent.com/58167190/180033986-c2869494-bec6-48b7-9382-e018eda1aeae.png)
 
-### Section
+### section
 
-This element represents a section of a document. It should have a heading element.
+`<section></section>`
+
+This element represents a **section** of a document. It should have a heading element. It is usually used to organize information by subject.
 
 **Example:**
 
@@ -112,9 +149,11 @@ This element represents a section of a document. It should have a heading elemen
 
 ![image](https://user-images.githubusercontent.com/58167190/180034113-8dc994ce-74dd-4cac-aa9e-0b66d3c042c9.png)
 
-### P
+### p
 
-This HTML element defines a paragraph.
+`<p></p>`
+
+This HTML element defines a **paragraph**. It is the most used tag when it comes to **texts**. Each paragraph includes a **line break** at the end by default.
 
 **Example:**
 
@@ -127,9 +166,11 @@ This HTML element defines a paragraph.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034208-23c47a83-6d93-4efe-9e35-ebd1bc610d97.png)
 
-### Div
+### div
 
-This is one of the most relevant items of HTML. It groups some other elements.
+`<div></div>`
+
+This is one of the most relevant items of HTML. It groups some other elements. The **div** is a container (this means, it is used to **graphically** group other items inside of it).
 
 ```
 <div>
@@ -143,9 +184,13 @@ This is one of the most relevant items of HTML. It groups some other elements.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034300-3fe13639-0d17-4dd7-a6d6-9b848aa61ebc.png)
 
-### Img
+### img
 
-This item is pretty self-explanatory. It does render an image with a given image soruce (online or offline).
+`<img />`
+
+This item is pretty self-explanatory. It does render an **image** with a given image soruce (online or offline).
+
+**Note**: this is one of the **HTML** items that is **self-closing**. This means, we don't have an opening `<>` and a `</>` closing tag, but it **opens** and **closes** in the same tag, like this: `< />`.
 
 **Example:**
 
@@ -158,9 +203,11 @@ This item is pretty self-explanatory. It does render an image with a given image
 
 ![image](https://user-images.githubusercontent.com/58167190/180034326-114d4e88-c17d-4276-a4f2-138c88952273.png)
 
-### Nav
+### nav
 
-The purpose of this element is to rpovide navigation links.
+`<nav></nav>`
+
+The purpose of this element is to provide **navigation** links (elements that can be clicked and usually will take a user to another section or page).
 
 **Example:**
 
@@ -177,9 +224,13 @@ The purpose of this element is to rpovide navigation links.
 
 ![image](https://user-images.githubusercontent.com/58167190/180034569-9b935520-27b4-4a61-89bc-3ab61470c3bb.png)
 
-### UL
+### ul
+
+`<ul></ul>`
   
-This element represents an unordered list.
+This element represents an **unordered** list. 
+
+**Note**: This element requires to be complemented with the `<li>` (list item) tag.
   
 **Example:**
   
@@ -193,9 +244,13 @@ This element represents an unordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034667-90fbfea9-d5c9-4da3-b199-d7687200b5a9.png)
   
-### OL
+### ol
+
+`<ol></ol>`
   
-This element represents an ordered list.
+This element represents an **ordered** list.
+
+**Note**: This element requires to be complemented with the `<li>` (list item) tag.
   
 **Example:**
   
@@ -209,9 +264,11 @@ This element represents an ordered list.
   
 ![image](https://user-images.githubusercontent.com/58167190/180034760-3ee2203d-0092-443b-88d9-1f9b1ebcb60b.png)
   
-### LI
+### li
+
+`<li></li>`
   
-This is a plain item to be used inside of a list.
+This is a plain item to be used inside of a list. This, at the same time, can contain other elements inside of it.
   
 **Example:**
   
@@ -223,6 +280,18 @@ This is a plain item to be used inside of a list.
 ```
   
 ![image](https://user-images.githubusercontent.com/58167190/180034773-dcc5b475-71da-49f4-97c1-da38a4d119df.png)
+
+### a
+
+`<a></a>`
+  
+This element makes its **children** a **hyperlink**.
+  
+**Example:**
+  
+```
+  <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
+```
 
 ## Module activity
 
