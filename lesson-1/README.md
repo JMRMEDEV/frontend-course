@@ -44,13 +44,15 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 4. [`<footer>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#footer).
 5. [`<section>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#section).
 6. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
-7. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
-8. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
-9. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
-10. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
-11. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
-12. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
-13. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
+7. [`<b>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#b).
+8. [`<i>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#i).
+9. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
+10. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
+11. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
+12. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
+13. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
+14. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
+15. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
 
 And many others...
 
@@ -165,6 +167,34 @@ This HTML element defines a **paragraph**. It is the most used tag when it comes
 ```
 
 ![image](https://user-images.githubusercontent.com/58167190/180034208-23c47a83-6d93-4efe-9e35-ebd1bc610d97.png)
+
+### b
+
+`<b></b>`
+
+This HTML element, inside of a text gives **bold** style. It is commonly used within `<p>`, `<span>` elements. 
+
+**Example:**
+
+```
+<p><b>This text is bold</b> and this is not</p>
+```
+
+![image](https://github.com/user-attachments/assets/9a8f3e09-6c6f-41fc-b0b1-c2d86c986317)
+
+### i
+
+`<i></i>`
+
+This HTML element, inside of a text gives *italic* style. It is commonly used within `<p>`, `<span>` elements. 
+
+**Example:**
+
+```
+<p><i>This text is italic</i> and this is not</p>
+```
+
+![image](https://github.com/user-attachments/assets/a305fa45-50b0-4445-abd8-e34dfb1a2dc6)
 
 ### div
 
@@ -292,6 +322,8 @@ This element makes its **children** a **hyperlink**.
 ```
   <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a>
 ```
+
+![image](https://github.com/user-attachments/assets/3d7e7aa5-8fc4-4514-a1b9-a87afa66ff13)
 
 ## Module activity
 
