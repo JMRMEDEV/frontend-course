@@ -50,7 +50,7 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 10. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
 11. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
 12. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
-13. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#a.md).
+13. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
 
 And many others...
 
