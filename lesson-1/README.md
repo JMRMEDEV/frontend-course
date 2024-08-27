@@ -20,7 +20,7 @@ The **HTML tags** usually have the following syntax (way to structure the code):
 </tag>
 ```
 
-Where the **`tag`** can by **HTML tag** like `div`, `nav`, `h1`, the **`attribute`** are **properties** that can provide extra behavior to each tag and the **children** are all elements that are between the **openning tag** `<>` and the **closing tag** `</>`. Please note that the items used like `tag`, `attribute1`, `attribute2` and `children` are only for **exemplification purposes** and are not **actual HTML elements**.
+Where the **`tag`** can be any **HTML tag** like `div`, `nav`, `h1`, the **`attribute1`**, **`attribute2`** are **properties** that can provide extra behavior to each tag and the **children** are all elements that are between the **openning tag** `<>` and the **closing tag** `</>`. Please note that the items used like `tag`, `attribute1`, `attribute2` and `children` are only for **exemplification purposes** and are not **actual HTML elements**.
 
 **Note**: The usual way the **tags** are structured is with an **openning tag** and a **closing tag**. 
 
@@ -46,13 +46,14 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 6. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
 7. [`<b>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#b).
 8. [`<i>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#i).
-9. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
-10. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
-11. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
-12. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
-13. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
-14. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
-15. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
+9. [`<br>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#br).
+10. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
+11. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
+12. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
+13. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
+14. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
+15. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
+16. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
 
 And many others...
 
@@ -195,6 +196,21 @@ This HTML element, inside of a text gives *italic* style. It is commonly used wi
 ```
 
 ![image](https://github.com/user-attachments/assets/a305fa45-50b0-4445-abd8-e34dfb1a2dc6)
+
+### br
+
+`<br></br>`
+
+This HTML element, inside of a text gives adds a **line break**. It is commonly used within `<p>`, `<span>` elements. 
+
+**Example:**
+
+```
+<p>This text is on the first line<br/>
+And this is is on another line.</p>
+```
+
+![image](https://github.com/user-attachments/assets/a0a1ff8b-04b4-4790-ba5a-7a39185261cd)
 
 ### div
 
