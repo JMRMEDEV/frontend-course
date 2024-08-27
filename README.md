@@ -5,7 +5,7 @@ Web and mobile development are some of the industries with some of the widest pr
 - Frontend (what the user can see, like windows, buttons, texts, colors).
 - Backend (data handling in some server to send information to the user).
 
-[**React.js**](https://reactjs.org/) and its mobile framework [**React Native**](https://reactnative.dev/) are some of the most used libraries (and framework, for react nativer) for web and mobile development. It was developed by **Facebook** and over this library (and framework) are built some well known apps as: 
+[**React.js**](https://reactjs.org/) and its mobile framework [**React Native**](https://reactnative.dev/) are some of the most used libraries (and framework, for react native) for web and mobile development. It was developed by **Facebook** and over this library (and framework) are built some well known apps as: 
 
 - Facebook.
 - Instagram.
