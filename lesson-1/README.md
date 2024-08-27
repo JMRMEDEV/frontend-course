@@ -47,12 +47,12 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 7. [`<b>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#b).
 8. [`<i>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#i).
 9. [`<br>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#br).
-10. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#div.md).
-11. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#img.md).
-12. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#nav.md).
-13. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ul.md).
-14. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#ol.md).
-15. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README#li.md).
+10. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#div).
+11. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#img).
+12. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#nav).
+13. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ul).
+14. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ol).
+15. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#li).
 16. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
 
 And many others...
