@@ -1,6 +1,6 @@
 # HTML
 
-[**HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML) is the most basic building block of the Web. It defines the meaning and structure of web content.
+[**HTML**](https://developer.mozilla.org/en-US/docs/Web/HTML) is the most basic building block of the web. It defines the meaning and structure of web content.
 
 ## Module Content
 
