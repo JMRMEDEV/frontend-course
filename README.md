@@ -1,18 +1,20 @@
 # Frontend Course
 
-Web development is one of the industries with a wide presence in the current job market. No matter your professional career, if you probe your knowledge on web development, is highly probable that you will get yourself a well-paid job. Web development is divided into two main different areas (there are many and more):
+Web and mobile development are some of the industries with some of the widest presence in the current job market. No matter your professional career, if you probe your knowledge on web development, is highly probable that you will get yourself a well-paid job. Web and mobile development is divided into two main different areas (there are many and more):
 
-- Frontend (what the user can see).
+- Frontend (what the user can see, like windows, buttons, texts, colors).
 - Backend (data handling in some server to send information to the user).
 
-[**React.js**](https://reactjs.org/) is some of the most used libraries for web development. It was developed by **Facebook** and over this library are built some well known apps as: 
+[**React.js**](https://reactjs.org/) and its mobile framework [**React Native**](https://reactnative.dev/) are some of the most used libraries (and framework, for react nativer) for web and mobile development. It was developed by **Facebook** and over this library (and framework) are built some well known apps as: 
 
 - Facebook.
 - Instagram.
 - Duolingo.
 - Airbnb.
+- Pinterest.
+- Discord.
 
-Knowing and understanding this library will take you closer to your job goals.
+Knowing and understanding this library (and framework) will take you closer to your job goals.
 
 ## Syllabus
 
