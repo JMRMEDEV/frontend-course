@@ -201,7 +201,7 @@ This HTML element, inside of a text gives *italic* style. It is commonly used wi
 
 ### br
 
-`<br></br>`
+`<br/>`
 
 This HTML element, inside of a text gives adds a **line break**. It is commonly used within `<p>`, `<span>` elements. 
 
