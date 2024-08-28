@@ -236,7 +236,7 @@ This is one of the most relevant items of HTML. It groups some other elements. T
 
 `<img />`
 
-This item is pretty self-explanatory. It does render an **image** with a given image soruce (online or offline).
+This item is pretty self-explanatory. It does render an **image** with a given image source (online or offline).
 
 **Note**: this is one of the **HTML** items that is **self-closing**. This means, we don't have an opening `<>` and a `</>` closing tag, but it **opens** and **closes** in the same tag, like this: `< />`.
 
