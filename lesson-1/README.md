@@ -40,7 +40,7 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 
 1. [`<title>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#title).
 2. [`<body>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#body).
-3. [`<header>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#header).
+3. [`<h>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#h).
 4. [`<footer>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#footer).
 5. [`<section>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#section).
 6. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
@@ -83,7 +83,7 @@ This tag represents the full content of a web page. There can be only one body i
 </body>
 ```
 
-### header
+### h
 
 `<h1></h1>`
 `<h2></h2>`
