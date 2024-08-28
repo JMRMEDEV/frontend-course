@@ -85,7 +85,9 @@ This tag represents the full content of a web page. There can be only one body i
 
 ### header
 
-`<header></header>`
+`<h1></h1>`
+`<h2></h2>`
+`<h3></h3>`
 
 The **header** represents introductory content (we could think on magazines and newspaper, where each article has a main header to describe what does the article talk about). Please notice that this tag does not break the content into different **sections**.
 
