@@ -386,15 +386,15 @@ This property let us choose how **bold** do we want our ps.
   
 The images rendered through HTML might require some adjustments in order to have the desired look and feel. While many `style` properties can be used in the `<img>` tag, there are some others that are specific for this tag. The most relevant: `object-fit` with `fill`, `contain` and `cover` values.
   
-1. `fill`
+1. `fill` (it makes the image to fill the container, but it might deform the image to achieve that).
   
 ![image](https://user-images.githubusercontent.com/58167190/180069520-9a07a696-9ac7-4f0d-9e12-a782f29f7e55.png)
 
-2. `contain`
+2. `contain` (it makes the image to fit in the container by scaling it, but it might make the image not to use all the space of its container)
   
 ![image](https://user-images.githubusercontent.com/58167190/180069564-77fa782f-c573-4220-92a5-9a6635b4620d.png)
 
-3. `cover`
+3. `cover` (it makes the image to use all the space of its container without image deformation, but is likely there are parts of the image that will not be visible)
   
 ![image](https://user-images.githubusercontent.com/58167190/180069620-4d8f78c2-af5c-4f90-9b9b-b421815b4ff0.png)
   
