@@ -23,7 +23,7 @@ In order to use the different styling and layout properties that CSS provide us,
 
 With an external style sheet, you can change the look of an entire website by changing just one file.
 
-Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section. The Style Sheets will always be references as a `.css` file format.
+Each HTML page must include a reference to the external style sheet file within the `<link>` tag, inside the `<head>` tag. The Style Sheets will always be references as a `.css` file format.
 
 **Example:**
 
@@ -40,9 +40,9 @@ Each HTML page must include a reference to the external style sheet file inside 
 </html>
 ```
 
-The `.css` files must not include any HTML tags.
+The `.css` files must not include any HTML tags or HTML syntax.
 
-A `.css` (in this example `mystyle.css` file might seem like this:
+A `.css` (in this example `mystyle.css`) file might seem like this:
 
 ```
 body {
@@ -57,11 +57,11 @@ h1 {
 
 **Important note:**
 
-The units on a CSS file must be placed together with the value. So please do this: `width: 20px` and **do not** this: `width: 20 px`.
+The units on a CSS file must be placed together with the value (no spaces). So please do this: `width: 20px` and **do not** this: `width: 20 px`.
 
 ## Internal CSS
 
-An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <style> element, inside the head section.
+An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined within the `<style>` element, inside the `<head>` tag.
 
 **Example:**
 
@@ -89,7 +89,9 @@ An internal style sheet may be used if one single HTML page has a unique style. 
 
 ## Inline CSS
 
-A case that we already know, based on our previous examples. An inline style may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+A case that we already know about, based on our previous examples. An inline style may be used to apply a unique style for a single element. To use inline styles, add the `style` **attribute** to the relevant element. The `style` **attribute** can contain any CSS property.
+
+**Note**: Please, keep in mind that all the **attributes values** should be placed **within** `""` (**doublequotes**) and each property, should be separated from others using **semicolons** (`;`);  
 
 **Example:**
 
@@ -97,7 +99,7 @@ A case that we already know, based on our previous examples. An inline style may
 <!DOCTYPE html>
 <html>
 <body>
-  <h1 style="color:blue;text-align:center;">This is a heading</h1>
+  <h1 style="color:blue; text-align:center;">This is a heading</h1>
   <p style="color:red;">This is a paragraph.</p>
 </body>
 </html>
@@ -105,7 +107,7 @@ A case that we already know, based on our previous examples. An inline style may
 
 **Note:** An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
   
-**Another note:** Please notice that when using **multiple CSS properties**, this are separated using `;` symbol.
+**Another note:** Please notice that when using **multiple CSS properties**, these are separated using `;` symbol.
   
 ## Common CSS Properties
   
@@ -150,7 +152,7 @@ The CSS colors can be specified in different manners:
   
 ### color
   
-Allow us to change the "front" color of an element. Mostly used for ps, icons and more.
+Allow us to change the **"front"** color of an element. Mostly used for texts, icons and more.
   
 **Example:**
   
@@ -164,7 +166,7 @@ Allow us to change the "front" color of an element. Mostly used for ps, icons an
   
 ### width
   
-Self explanatory. Please notice that the **units** can be `px`, `rem`, `%` and more. Look at the references for more info about this.
+Self explanatory. Please notice that the **units** can be `px`, `rem`, viewport (`vh` and `vw`), `%` and more. Look at the references for more info about this.
   
 **Example:**
   
@@ -181,7 +183,7 @@ Self explanatory. Please notice that the **units** can be `px`, `rem`, `%` and m
   
 ### height
   
-Self explanatory.
+Self explanatory. Please notice that the **units** can be `px`, `rem`, viewport (`vh` and `vw`), `%` and more. Look at the references for more info about this.
   
 **Example:**
   
@@ -198,7 +200,7 @@ Self explanatory.
   
 ### border-radius
   
-This property indicates how rounded do we want our element.
+This property indicates how **rounded** we want our element.
   
 **Example:**
   
@@ -212,7 +214,7 @@ This property indicates how rounded do we want our element.
   
 ### border-style
   
-This element indicates how do we want to show the border line in case wanted. Must go with [`border-width`]() property. Some possible values for the property are `dotted`, `dashed` and `solid`.
+This element indicates how do we want to show the border line in case wanted. Must go with [`border-width`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#border-width) property. Some possible values for the property are `dotted`, `dashed` and `solid`.
   
 **Example:**
   
