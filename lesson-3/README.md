@@ -8,6 +8,8 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 
 - [**JavaScript Pros and Cons**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#javascript-pros-and-cons)
 - [**HTML and JavaScript**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#html-and-javascript)
+- [**JavaScript Strings**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#strings)
+- [**JavaScript Arrays**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#arrays)
 - [**Sources**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#sources)
 
 ## JavaScript Pros and Cons
@@ -413,6 +415,76 @@ And clicking again:
 ![image](https://user-images.githubusercontent.com/58167190/181391738-92b92d65-5c2f-48c3-a888-409eea7fb661.png)
 
 So with this, now we have reviewed the concepts together: **HTML**, **JavaScript** and **CSS**.
+
+## Strings
+
+The **JavaScript** **String** object is used to represent a sequence of characters (**e.g.**: `a`, `c`, `2`, etc). These are usefuld for holding data that can be represented as **text**. 
+
+### String creation
+
+We have several ways to **create strings**:
+
+```
+const stringA = "I am a string";
+const stringB = 'I am another string';
+const stringC = `I am yet another string`. // Template literal
+const stringD = new String("I am a string object");
+```
+
+### Character access
+
+As the strings are sequences of characters, we might want to access individual characters from a single string. To do so, we have two choices:
+
+- `"I am a string".charAt(2); // Which returns 'a'`
+- `"I am a string"[2]; // Which returns 'a'`
+
+### Main Methods
+
+**JavaScript** has built-in methods for manipulating strings which allow us to achieve several things when dealing with texts. Here we review some of the most common and widely-used ones.
+
+#### concat
+
+The `concat()` methods **concatenates** all the passed strings and returns a new one. In other words, it merges the passed strings into a different one.
+
+**Example**:
+
+```
+const stringA = "Hello";
+const stringB = "World!";
+const spacedString = " ";
+
+const stringC = stringA.concat(spacedString, stringB);
+console.log(stringC); // Expected output: "Hello, World!"
+```
+
+#### includes
+
+The `includes()` method performs a **case-sensitive** search to determine whether a given string can be found within the string that invokes `includes()` method. This method return a `boolean` (`true` or `false`).
+
+**Example**:
+
+```
+const text = "What does the fox say?";
+
+const searchTerm = "fox";
+
+console.log(text.includes(searchTerm)); // The output should be `true`
+
+```
+
+### replace
+
+The `replace()` method od a string returns a new string with one, some or all matches of a **pattern** replaced by a **replacement**, where the **pattern** can be either a string or a **regular expression**. If a **string** is used instead of a regular expression, only **the first match** will be replaced. The original string keeps **unaltered**.
+
+**Example**: 
+
+```
+const text = "Anakin Skywalker is very powerful, but Anakin Skywalker is not a master";
+
+console.log(text.replace("Anakin Skywalker", "Darth Vader")); // Expected output: "Darth Vader is very powerful, but Anakin Skywalker is not a master"
+
+console.log(text.replace(/Anakin Skywalker/g, "Darth Vader")); // Expected output: "Darth Vader is very powerful, but Darth Vader is not a master"
+```
 
 ## Module Activity
 
