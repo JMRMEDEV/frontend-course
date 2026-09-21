@@ -5,6 +5,7 @@
 ## Module content
 
 - [CSS insertion](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#css-insertion)
+- [CSS selectors](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#css-selectors)
 - [Common CSS properties](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#common-css-properties)
 - [Image manipulation](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#image-manipulation)
 - [Layout](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#layout)
@@ -108,6 +109,94 @@ A case that we already know about, based on our previous examples. An inline sty
 **Note:** An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
   
 **Another note:** Please notice that when using **multiple CSS properties**, these are separated using `;` symbol.
+  
+## CSS Selectors
+
+Back in the **External CSS** and **Internal CSS** examples, you saw blocks like this:
+
+```
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+}
+```
+
+But how does the browser know *which* elements those rules apply to? That is the job of a **selector**. A CSS rule has two parts:
+
+```
+selector {
+  property: value;
+}
+```
+
+The **selector** picks *which* HTML elements get styled, and the block in `{ }` says *how* to style them. Let's look at the three selectors you will use the most.
+
+### Element (tag) selector
+
+You write the **tag name** directly. It targets **every** element of that type on the page. In the example above, `body { ... }` styles the `<body>`, and `h1 { ... }` styles **all** `<h1>` elements.
+
+```
+p {
+  color: green;
+}
+```
+
+This turns **every** `<p>` on the page green. Useful, but sometimes too broad, we may want only *some* elements styled, not all of them. That is where classes and ids come in.
+
+### Class selector (`.`)
+
+A **class** is a label you put on one or more HTML elements using the `class` attribute. In the CSS, you target it by writing a **dot** (`.`) followed by the class name.
+
+**HTML:**
+
+```
+<p class="highlight">Pick me!</p>
+<p>Leave me normal.</p>
+<span class="highlight">Me too!</span>
+```
+
+**CSS:**
+
+```
+.highlight {
+  background-color: yellow;
+}
+```
+
+Only the two elements with `class="highlight"` turn yellow. Classes are **reusable**: you can give the same class to as many elements as you want, and they can even be different tags (a `<p>` and a `<span>` above). This is the selector you will use most often.
+
+### Id selector (`#`)
+
+An **id** is a **unique** name for a *single* element, set with the `id` attribute. In the CSS, you target it with a **hash** (`#`) followed by the id name.
+
+**HTML:**
+
+```
+<div id="main-banner">Welcome!</div>
+```
+
+**CSS:**
+
+```
+#main-banner {
+  background-color: pink;
+}
+```
+
+**Important:** an `id` must be **unique** in the page, only one element should have a given id. If you want to style several elements the same way, use a **class** instead. (Ids are also very useful later in JavaScript to find one specific element, as we will see in the next lesson.)
+
+### Quick recap
+
+| Selector | Written as | Targets |
+| --- | --- | --- |
+| Element | `p { }` | every element of that tag |
+| Class | `.highlight { }` | any element with `class="highlight"` (reusable) |
+| Id | `#main-banner { }` | the single element with `id="main-banner"` (unique) |
+
+Remember the grid example from the **display** section further down uses `.grid-container` and `.grid-item`, now you know those dots mean "these are **class** selectors".
   
 ## Common CSS Properties
   
