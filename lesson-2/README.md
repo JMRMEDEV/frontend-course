@@ -287,12 +287,14 @@ This property allow us to set different styles to a determined p. Some possible 
   
 ```  
 <div>
-  <p style="text-decoration: underline;">Hello there!</p>
-  <p style="text-decoration: line-through;">Hello there!</p>
+  <p style="text-decoration-line: underline;">Hello there!</p>
+  <p style="text-decoration-line: line-through;">Hello there!</p>
 </div>
 ```
   
 ![image](https://user-images.githubusercontent.com/58167190/180065461-620fb24f-0448-4dfa-aec5-00377fb0242a.png)
+
+**Note:** You may also see the shorthand property `text-decoration` used instead of `text-decoration-line` (for example, `text-decoration: underline;`). The shorthand can set several decoration values at once (line, color, style), but for this course we use the more specific `text-decoration-line`, which only sets the line type. Both are valid CSS.
 
 ### font-size
   
