@@ -20,6 +20,7 @@ This lesson is the hands-on half of React. In the previous lesson, [**React Libr
 - [F. React + TypeScript + ESLint](#f-react--typescript--eslint)
 - [G. Advanced React](#g-advanced-react)
 - [H. Frameworks & libraries](#h-frameworks--libraries)
+- [Exercises & Challenges](#exercises--challenges)
 - [I. References](#i-references)
 
 ## E. React features
@@ -1105,6 +1106,189 @@ If bundle size is critical (say, an embeddable widget or a very performance-sens
 **Million.js** was presented here as an **optimizing layer** for React that promised faster load and render times through an optimizing compiler, reactive data primitives, batching, keyed-rendering optimizations, a React compatibility layer, and a smaller bundle size.
 
 > **Modern note.** Treat Million.js as **historical context** rather than something to adopt today. The project has largely **wound down**, and its author moved on to work on React's own tooling. The performance story it was chasing, automatic optimization so you don't hand-tune `useMemo`/`useCallback`, is now addressed directly by the **React Compiler** (mentioned in the Hooks section) that ships with modern React. If you were reaching for Million.js for speed, the modern answer is the **React Compiler** plus normal good practices.
+
+## Exercises & Challenges
+
+These exercises come from the live React sessions, ordered from easier to harder. Build each one before peeking at the solution.
+
+### Props: pass data through a component
+
+Create a `Greeting` component that receives a `name` prop and renders `Hello, <name>!`. Render it from a parent with the name `"Luke"`.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
+}
+
+function App() {
+  return <Greeting name="Luke" />;
+}
+```
+</details>
+
+### Props: optional prop with a default value
+
+Make a `Button` component that accepts an optional `label` prop. If none is given, it should default to `"Click me"`.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+function Button({ label = "Click me" }) {
+  return <button>{label}</button>;
+}
+
+// <Button />                -> "Click me"
+// <Button label="Submit" /> -> "Submit"
+```
+</details>
+
+### Props: typed callback handler (TypeScript)
+
+Type a `SelectableAvatar` component whose `onSelect` prop is a function taking a string `id` and returning nothing.
+
+<details>
+<summary>Solution</summary>
+
+```tsx
+interface AvatarProps {
+  id: string;
+  onSelect: (id: string) => void;
+}
+
+const SelectableAvatar = ({ id, onSelect }: AvatarProps) => (
+  <button onClick={() => onSelect(id)}>Select</button>
+);
+```
+</details>
+
+### State: click counter
+
+Build a `Counter` component with a button that increments a number each time it is clicked, using `useState`.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+</details>
+
+### State: toggle a theme
+
+Make a component with a button that toggles a label between `"light"` and `"dark"` each click.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+import { useState } from "react";
+
+function ThemeToggle() {
+  const [theme, setTheme] = useState("light");
+  return (
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+      Current theme: {theme}
+    </button>
+  );
+}
+```
+</details>
+
+### Forms: controlled input that casts to a number
+
+Build a controlled input for a quantity. Store its value in state and make sure the stored value is a **number**, not a string.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+import { useState } from "react";
+
+function QuantityInput() {
+  const [quantity, setQuantity] = useState(0);
+  return (
+    <input
+      type="number"
+      value={quantity}
+      onChange={(event) => setQuantity(Number(event.target.value))}
+    />
+  );
+}
+```
+</details>
+
+### Effects: fetch and list data
+
+Fetch a list of users once when the component mounts, store them in state, and render each one's name. Give each list item a stable `key`.
+
+<!-- repaired: the instructor first demoed the wrong approach (calling the fetch directly in the component body, which re-ran on every render); this is the corrected useEffect version he arrived at. -->
+<details>
+<summary>Solution</summary>
+
+```jsx
+import { useState, useEffect } from "react";
+
+const USERS_URL = "https://jsonplaceholder.typicode.com/users";
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const loadUsers = async () => {
+      const response = await fetch(USERS_URL);
+      const data = await response.json();
+      setUsers(data);
+    };
+    loadUsers();
+  }, []); // empty array -> run once on mount
+
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+> **Why the empty `[]` matters:** without a dependency array the effect runs on *every* render, and setting state inside it would trigger another render, an infinite loop. `[]` says "run once, on mount".
+</details>
+
+### Styling: a user card with flexbox
+
+Build a `UserCard` that shows an avatar image and, next to it, the user's name and email in a column, laid out with flexbox.
+
+<details>
+<summary>Solution</summary>
+
+```jsx
+function UserCard({ user }) {
+  return (
+    <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+      <img src={user.avatar} alt={user.name} width={64} height={64} />
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <strong>{user.name}</strong>
+        <span>{user.email}</span>
+      </div>
+    </div>
+  );
+}
+```
+</details>
 
 ## I. References
 
