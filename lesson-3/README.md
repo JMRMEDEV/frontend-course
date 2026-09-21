@@ -322,7 +322,7 @@ That's a great question. So far, we tell **HTML** to load and execute a script. 
 
 The great magic word for this is **`document.getElementById()`**, which gets a reference to an HTML element through its id. But... What is an id?
 
-Well, in HTML, the tags have the **`id`** attribute, that as the name says, is used to identify each element. We could have different elements with the same id, which would translate in unexpected behaviour. The best thing is to assign a unique **id** to each element. This **id** is recommended to be related to the element itself. For example **`id=awesome-header-1`**. Let's see an example:
+Well, in HTML, the tags have the **`id`** attribute, that as the name says, is used to identify each element. An **id must be unique**: no two elements on the same page should share the same id. Reusing an id is invalid HTML and leads to unpredictable results (for example, `document.getElementById` will only ever hand you back one of them). If you need to label several elements together, use a **class** instead (as we saw in the CSS lesson). This **id** is recommended to be related to the element itself. For example **`id=awesome-header-1`**. Let's see an example:
 
 ```
 <h1 id="header1">Hi there!</h1>
