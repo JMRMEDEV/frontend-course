@@ -529,6 +529,8 @@ console.log(text.replace(/Anakin Skywalker/g, "Darth Vader")); // Expected outpu
 
 We are going to build a basic functional calculator with HTML + CSS and JavaScript. It must have the addition, subtraction, division and multiplication capabilities. Free layout.
 
+Remember the calculator you designed back in the **CSS lesson** (lesson 2)? That one only *looked* like a calculator, the buttons did nothing when clicked. Now is the moment to bring it to life: reuse that same HTML + CSS layout and, with everything you learned in this lesson (`getElementById`, events like `onclick`, functions and conditionals), make the buttons actually perform the math. In other words, we are turning the *static* calculator from lesson 2 into a *working* one.
+
 ## Sources
 
 - [**Mozilla**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
