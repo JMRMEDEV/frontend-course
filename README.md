@@ -1,6 +1,6 @@
 # Frontend Course
 
-Web and mobile development are some of the industries with some of the widest presence in the current job market. No matter your professional career, if you probe your knowledge on web development, is highly probable that you will get yourself a well-paid job. Web and mobile development is divided into two main different areas (there are many and more):
+Web and mobile development are some of the industries with some of the widest presence in the current job market. No matter your professional career, if you prove your knowledge on web development, it is highly probable that you will get yourself a well-paid job. Web and mobile development is divided into two main different areas (there are many and more):
 
 - Frontend (what the user can see, like windows, buttons, texts, colors).
 - Backend (data handling in some server to send information to the user).
@@ -24,7 +24,7 @@ Knowing and understanding this library (and framework) will take you closer to y
 4. TypeScript (introduction)
 5. Node.js
 6. APIs
-7. Asynchronus functions
+7. Asynchronous functions
 8. React Library
 9. React Key Concepts
 10. VS Code

@@ -20,9 +20,9 @@ The **HTML tags** usually have the following syntax (way to structure the code):
 </tag>
 ```
 
-Where the **`tag`** can be any **HTML tag** like `div`, `nav`, `h1`, the **`attribute1`**, **`attribute2`** are **properties** that can provide extra behavior to each tag and the **children** are all elements that are between the **openning tag** `<>` and the **closing tag** `</>`. Please note that the items used like `tag`, `attribute1`, `attribute2` and `children` are only for **exemplification purposes** and are not **actual HTML elements**.
+Where the **`tag`** can be any **HTML tag** like `div`, `nav`, `h1`, the **`attribute1`**, **`attribute2`** are **properties** that can provide extra behavior to each tag and the **children** are all elements that are between the **opening tag** `<>` and the **closing tag** `</>`. Please note that the items used like `tag`, `attribute1`, `attribute2` and `children` are only for **exemplification purposes** and are not **actual HTML elements**.
 
-**Note**: The usual way the **tags** are structured is with an **openning tag** and a **closing tag**. 
+**Note**: The usual way the **tags** are structured is with an **opening tag** and a **closing tag**. 
 
 Like here:
 
@@ -30,11 +30,11 @@ Like here:
 <p>This is a text</p>
 ```
 
-However there are **special cases** like the `img` tag, that is **self-closing**, `<img />` where the **oppening and closing tag** are **combined**.
+However there are **special cases** like the `img` tag, that is **self-closing**, `<img />` where the **opening and closing tag** are **combined**.
 
-Usually the **attributes** go in the **openning tag**, like `<a href="https://wikipedia.org">Wikipedia</a>`, where **`href`** is an **attribute**.
+Usually the **attributes** go in the **opening tag**, like `<a href="https://wikipedia.org">Wikipedia</a>`, where **`href`** is an **attribute**.
 
-However, for the tags that are **self-closing**, the attributes go on the **self-closing** tag, before the symbol `/`, like in here: `<img src="htpps://wikipedia.org" />`, where `src` is an **attribute**.
+However, for the tags that are **self-closing**, the attributes go on the **self-closing** tag, before the symbol `/`, like in here: `<img src="https://wikipedia.org" />`, where `src` is an **attribute**.
 
 **HTML markup includes** special "elements" such as:
 
@@ -165,7 +165,7 @@ This HTML element defines a **paragraph**. It is the most used tag when it comes
 ```
 <div>
   <h2>This is a header</h2>
-  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a paragraph. usually this kind of elements will do line breaks by itself.</p>
 </div>
 ```
 
@@ -223,10 +223,10 @@ This is one of the most relevant items of HTML. It groups some other elements. T
 ```
 <div>
   <h2>This is a header</h2>
-  <p> And this is an example of a pragraph. usually this kind of elements will do line breakes by itself.</p>
+  <p> And this is an example of a paragraph. usually this kind of elements will do line breaks by itself.</p>
 </div>
 <div>
-  <p> This is a different div, wich says is in a different group.</p>
+  <p> This is a different div, which says is in a different group.</p>
 </div>
 ```
 

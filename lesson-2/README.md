@@ -440,7 +440,7 @@ This CSS property as it is may have different use-cases. But for our purposes we
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta htttext-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
     <style>
       .grid-container {
@@ -744,7 +744,7 @@ This property let us assign a padding (a space that the item itself will take as
   
 ## Module Activity
   
-By using all that we have learnt in this lesson, we will recreate the follwing calculator:
+By using all that we have learnt in this lesson, we will recreate the following calculator:
   
 ![image](https://user-images.githubusercontent.com/58167190/180083707-c21852c2-a319-43c6-b4e3-2a069ddfa5b5.png)
 
