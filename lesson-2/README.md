@@ -496,12 +496,58 @@ Layout refers to the order and structure used for displaying the different prese
 In CSS layout, we will find how to distribute the size of different graphic elements in an elegant manner. For such matter, we might use either `flexbox` or `grid` systems. We will review some of the most common layout CSS properties:
   
 1. [`display`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#display)
-2. [`flex`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#flex-direction)
-3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#justify-content)
-4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
+2. [`flex`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#flex)
+3. [`flex-direction`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#flex-direction)
+4. [`justify-content`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#justify-content)
 5. [`align-items`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#align-items)
 6. [`margin`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#margin)
 7. [`padding`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md#padding)
+
+Before we dive into these, there is one idea that ties `margin`, `padding`, `border` and `width`/`height` together: the **box model**.
+
+### The box model
+
+In CSS, **every element is a rectangular box**, even things that do not look boxy. That box is built out of four layers, one wrapped around the next, from the inside out:
+
+1. **Content** — the actual text or image. Its size is what `width` and `height` control.
+2. **Padding** — space **inside** the box, between the content and the border. It shares the element's background color.
+3. **Border** — a line drawn around the padding (the `border-style`, `border-width`, `border-color` we saw earlier).
+4. **Margin** — space **outside** the box, pushing other elements away. It is always transparent.
+
+A simple way to picture it, imagine a framed picture on a wall:
+
+- the **content** is the photo,
+- the **padding** is the empty mat between the photo and the frame,
+- the **border** is the frame itself,
+- the **margin** is the empty wall space keeping other frames from touching this one.
+
+```
++-----------------------------------+  <- margin (space OUTSIDE, transparent)
+|   +---------------------------+   |
+|   |          border           |   |
+|   |   +-------------------+   |   |
+|   |   |      padding      |   |   |
+|   |   |   +-----------+   |   |   |
+|   |   |   |  content  |   |   |   |
+|   |   |   +-----------+   |   |   |
+|   |   +-------------------+   |   |
+|   +---------------------------+   |
++-----------------------------------+
+```
+
+**Why this matters:** by default, when you set `width: 200px`, that `200px` applies to the **content** only, the padding and border are then *added on top*, so the box can end up wider than 200px on screen. This surprises almost everyone at first. You do not need to master this now; just keep the four layers in mind when your boxes look bigger or smaller than expected.
+
+**Tip (for later):** many developers add this rule so that `width`/`height` include the padding and border, which makes sizing far more predictable:
+
+```
+* {
+  box-sizing: border-box;
+}
+```
+
+The `*` there is the **universal selector** (it means "every element"). `box-sizing: border-box` is an intermediate topic, so do not worry if it does not fully click yet, just remember it exists for when your layouts start fighting you. For a deeper explanation, see [**MDN — The box model**](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model).
+
+Now let's look at the individual layout properties.
 
 ### display
 
