@@ -2,6 +2,8 @@
 
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
 
+Do not worry if that definition sounds like a lot of jargon, you do not need to understand every word to start writing JavaScript. Just to unpack one term you will hear often: *single-threaded* simply means JavaScript does **one thing at a time**, like a single cook working through orders one after another instead of many cooks at once. We will not dwell on this now; it becomes relevant much later when we talk about asynchronous code.
+
 **JavaScript** and **Java** are entirely different programming languages.
 
 ## Module Content
