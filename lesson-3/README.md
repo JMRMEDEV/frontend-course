@@ -42,7 +42,18 @@ void PrintMessage()
 
 In here, you can see that we are using the types **int** and **char** for being explicit.
 
-2. Example in **JavaScript**.
+2. Example in **Python** programming language.
+
+```
+def print_message():
+    message = "Hello world!"
+    for i in range(len(message)):
+        print(message[i], end="")
+```
+
+Python, like JavaScript, does not make us write the type of the variable, we just say `message = "Hello world!"`.
+
+3. Example in **JavaScript**.
 
 ```
 const printMessage = () => {
@@ -55,6 +66,8 @@ const printMessage = () => {
 ```
 
 As you can see, we just used the word 'let' for letting **JavaScript** know that we are declaring a variable, instead of using **types**.
+
+**Notice the important idea here:** all three programs do **the exact same thing**, go through the characters of "Hello world!" and print them one by one. Only the *spelling* of the language changes: C forces us to declare types (`int`, `char`), while Python and JavaScript let us skip them. The **logic and the ideas** (a variable holding text, a loop that walks through each character, printing each one) are the same everywhere. That is the real skill you are building: once you can *think* through a problem as steps, you can express those steps in almost any programming language, only the syntax changes.
 
 At first sight, might seem like **JavaScript** is easier, since we do not have to define **types** for our code and at some point, it is **true**. Let's see the following example:
 
