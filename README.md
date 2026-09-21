@@ -25,7 +25,7 @@ Knowing and understanding this library (and framework) will take you closer to y
 5. Node.js
 6. APIs
 7. Asynchronous functions
-8. React Library
+8. [React Library](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-4/README.md)
 9. React Key Concepts
 10. VS Code
 11. Postman
