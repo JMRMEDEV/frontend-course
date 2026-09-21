@@ -27,6 +27,6 @@ Knowing and understanding this library (and framework) will take you closer to y
 7. [Asynchronous functions](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-7/README.md)
 8. [React Library](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-8/README.md)
 9. [React Key Concepts](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-9/README.md)
-10. VS Code
-11. Postman
-12. Code styling with ESLint
+10. [VS Code](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-10/README.md)
+11. [Postman](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-11/README.md)
+12. [Code styling with ESLint](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-12/README.md)
