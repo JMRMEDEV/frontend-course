@@ -332,7 +332,7 @@ What about if we would like to **programmatically** change the children of a HTM
 const main = () => {
   let header1 = document.getElementById("header1");
   header1.innerHTML = "Bonjour";
-}
+};
 ```
 
 In this piece of code, we are assigning the content of the HTML tag with the **identifier** `header1` to the *`header1`* variable. Now, the **`header1`** variable, is like an HTML element, with all of its properties, but as a **program entity**. Now is not only a tag, but an object in the memory containing the information of such tag. In this order of ideas, *`innerHTML`* represents the children of the HTML tag. So, by doing ` header1.innerHTML = "Bonjour";` we are telling our browser to assign `"Bonjour"` as the children of the `<h1>` tag.
