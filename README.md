@@ -21,10 +21,10 @@ Knowing and understanding this library (and framework) will take you closer to y
 1. [HTML](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md)
 2. [CSS](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-2/README.md)
 3. [JavaScript](https://github.com/JMRMEDEV/frontend-course/tree/master/lesson-3/README.md)
-4. TypeScript (introduction)
-5. Node.js
-6. APIs
-7. Asynchronous functions
+4. [TypeScript (introduction)](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-4/README.md)
+5. [Node.js](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-5/README.md)
+6. [APIs](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-6/README.md)
+7. [Asynchronous functions](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-7/README.md)
 8. [React Library](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-8/README.md)
 9. [React Key Concepts](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-9/README.md)
 10. VS Code
