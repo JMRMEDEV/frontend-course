@@ -400,6 +400,32 @@ In here, we defined the **`handleOnClick()`** function, which receives any param
 
 Also notice that at the top of our `js` file now we have a variable defined through `var`. By using `var` we are indicating to the browser that this variable can be accessed in many places and not only the place where is defined. Also notice that this variable, `headerColor` is outside of any function, which turns it into a **global variable**. A **global variable** is a special type of variable that can be accessed in practically any place. By following the last steps, we should have something like the following:
 
+#### A word about `var` (and hoisting)
+
+You may be wondering why we suddenly used `var` here instead of `let` or `const`. The short version:
+
+- **`const`** → a variable you will **not** reassign.
+- **`let`** → a variable you **may** reassign later.
+- **`var`** → an older way of declaring variables. It is **function-scoped** (it lives in the whole function, not just the block it was written in) and it is **hoisted**. Modern code usually prefers `let` and `const`, but `var` still has valid uses when you specifically want that hoisting / function-scope behavior.
+
+**So what is "hoisting"?** (Explained for babies 🍼) Imagine you are reading a recipe out loud, and before you even start cooking, someone quietly writes down the *names* of all the ingredients you are going to mention, so those names already "exist" from the very first line. JavaScript does something similar: before running your code, it takes all the `var` declarations and **moves their names to the top** of the function. The *name* exists early (with a temporary value of `undefined`), even though the *value* is only assigned later where you actually wrote it.
+
+Let's imagine we want to do this:
+
+```
+const main = () => {
+  console.log(message); // This does NOT crash. It prints: undefined
+  var message = "Hello!";
+  console.log(message); // Now it prints: "Hello!"
+};
+
+main();
+```
+
+The first `console.log` does not error out, even though `message` seems to be declared *after* it. That is hoisting at work: JavaScript already knew the *name* `message` existed (as `undefined`) from the top of the function. This "use it before you declare it" tolerance is a behavior of `var`, and it is the kind of thing `var` allows that `let`/`const` do not (with `let`/`const`, reading the variable before its declaration line throws an error instead). So when you *specifically* want that flexible, hoisted, function-scoped behavior, `var` is the tool for it.
+
+> **Note:** Hoisting is a **mid/advanced topic** and is **not mandatory** for this course. You can safely stick to `let` and `const` for everything and be perfectly fine. We mention it only so the `var` above does not look like magic. If you want to dive deeper, see Mozilla's explanation: [**MDN — Hoisting**](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting).
+
 Before the user click:
 
 ![image](https://user-images.githubusercontent.com/58167190/181391669-f58fd766-0e8d-4278-a18c-4c9c0560d9dc.png)
