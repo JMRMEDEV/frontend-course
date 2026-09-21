@@ -413,6 +413,24 @@ const main = () => {
 
 In here, we defined the **`handleOnClick()`** function, which receives any parameter. It makes a reference to our header1 element (`<h1>`) now, it use a **conditional statement**. What is this? Nothing but a way to control the flow of our program. It basically says *'if this condition is met, then, do this'*. So in here, we are saying, if the `headerColor` is equal to `"red"`, change the value of the `headerColor` variable to `"blue"`. But we also can see an **`else`** statement which controls what to do if the **`if`** condition is not met. In this case, we would be saying in the whole expression *'if headerColor is equal to red, change it to blue. Otherwise, change it to red'*. This means, that every time the user clicks on the button, the color will change. 
 
+#### Why `===` and not `=`?
+
+You may have noticed we wrote `headerColor === "red"` with **three** equal signs, not one. This trips up almost every beginner, so let's clear it up:
+
+- **`=`** (one equals) **assigns** a value. `headerColor = "red"` means *"put the text 'red' into the variable `headerColor`"*.
+- **`===`** (three equals) **compares** two values and answers `true` or `false`. `headerColor === "red"` means *"is `headerColor` equal to 'red'?"*.
+
+So inside an `if (...)` we almost always want `===`, because we are **asking a question**, not assigning.
+
+But what about `==` (two equals)? It also compares, but it is more permissive: before comparing, it will quietly **convert** the values to the same type. That sounds helpful, but it causes surprising results:
+
+```
+console.log(5 === "5"); // false  -> a number is NOT the same as a text "5"
+console.log(5 == "5");  // true   -> == converts "5" into 5 first, then compares
+```
+
+The `==` version says a number and a piece of text are "equal", which is rarely what you mean and is a classic source of bugs. **Rule of thumb for this course: always use `===` (and `!==` for "not equal").** It compares both the value *and* the type, so there are no surprises.
+
 Also notice that at the top of our `js` file now we have a variable defined through `var`. By using `var` we are indicating to the browser that this variable can be accessed in many places and not only the place where is defined. Also notice that this variable, `headerColor` is outside of any function, which turns it into a **global variable**. A **global variable** is a special type of variable that can be accessed in practically any place. By following the last steps, we should have something like the following:
 
 #### A word about `var` (and hoisting)
