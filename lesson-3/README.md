@@ -31,9 +31,9 @@ void PrintMessage()
 {
   int i = 0;
   char message[13] = "Hello world!";
-  for (i; i < 14; i++)
+  for (i; i < 12; i++)
   {
-    printf(message[i]);
+    printf("%c", message[i]);
   }
 }
 ```
@@ -46,7 +46,7 @@ In here, you can see that we are using the types **int** and **char** for being 
 const printMessage = () => {
   let i = 0;
   let message = ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'];
-  for (i; i < message.length(); i++){
+  for (i; i < message.length; i++){
     console.log(message[i]);
   }
 };
@@ -122,11 +122,11 @@ const getFullName = (firstName, lastName) => {
 const main = () => {
   getFullName("John", "Doe");
 };
-
-main();
 ```
 
-Firstly, in the **HTML** file you might have noticed a new **tag** **`<script>`**. The first think to know, is that this tag is not *self-closing*, this means that we **could not** make something like this: **`<script />`**. Also is important for you to know, that we could actually write our **JavaScript** code inside of the `<script>` tag. However, **it is not the recommended way to proceed**. Just to clarify, here is an example:
+Notice that this `script.js` does **not** call `main()` at the bottom. That is because the HTML already runs it through `<body onload="main()">`, which waits until the page (the `<body>` and its contents) has loaded before executing. This matters: because the `<script>` is in the `<head>`, it is read **before** the `<body>` exists. If we called `main()` directly at the bottom of the script and that function tried to read an HTML element (as we will do later), the element would not exist yet and the program would fail. Letting `onload` trigger `main()` avoids that problem.
+
+Firstly, in the **HTML** file you might have noticed a new **tag** **`<script>`**. The first thing to know, is that this tag is not *self-closing*, this means that we **could not** make something like this: **`<script />`**. Also is important for you to know, that we could actually write our **JavaScript** code inside of the `<script>` tag. However, **it is not the recommended way to proceed**. Just to clarify, here is an example:
 
 ```
 <script>
@@ -163,8 +163,6 @@ const main = () => {
   fullName = getFullName("John", "Doe");
   console.log(fullName);
 };
-
-main();
 ```
 
 With these modifications we are doing the following:
@@ -454,7 +452,7 @@ const stringB = "World!";
 const spacedString = " ";
 
 const stringC = stringA.concat(spacedString, stringB);
-console.log(stringC); // Expected output: "Hello, World!"
+console.log(stringC); // Expected output: "Hello World!"
 ```
 
 #### includes
