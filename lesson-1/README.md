@@ -4,9 +4,38 @@
 
 ## Module Content
 
+- [Getting Started](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#getting-started)
 - [HTML Tags](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#html-tags)
 - [Module Activity](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#module-activity)
 - [Sources](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#sources)
+
+## Getting Started
+
+Before we write any tag, we need a place to put it. An HTML page is just a plain text file whose name ends in `.html` (for example, `index.html`). When you open that file in a web browser, the browser reads your tags and paints the page.
+
+You have two easy ways to work:
+
+1. **Online (recommended for this course).** Go to [**CodeSandbox**](https://codesandbox.io), create a new **static** (vanilla HTML) sandbox, and you will already have an `index.html` file waiting for you. Anything you type is shown live in the preview on the right. This is what we use during the live sessions.
+
+2. **On your own computer.** Open any text editor (Notepad, VS Code, etc.), paste your HTML, and save the file with the `.html` extension (make sure it is not saved as `index.html.txt`). Then double-click the file, or right-click it and choose *Open with → your browser*, and the page will load.
+
+Every HTML page starts from the same basic skeleton. Do not worry about memorizing it yet, just know that our tags live **inside** it:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first page</title>
+  </head>
+  <body>
+    <!-- Everything the user sees goes here -->
+    <p>Hello world!</p>
+  </body>
+</html>
+```
+
+Here `<!DOCTYPE html>` tells the browser "this is a modern HTML page", `<head>` holds information *about* the page (like its `<title>` and character set) that the user does not see directly, and `<body>` holds everything that **is** shown on screen. Throughout this lesson, when you see a small snippet like `<p>Hello world!</p>`, imagine it sitting inside the `<body>` of this skeleton.
 
 ## HTML tags
 
@@ -42,18 +71,19 @@ However, for the tags that are **self-closing**, the attributes go on the **self
 2. [`<body>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#body).
 3. [`<h>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#h).
 4. [`<footer>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#footer).
-5. [`<section>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#section).
-6. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
-7. [`<b>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#b).
-8. [`<i>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#i).
-9. [`<br>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#br).
-10. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#div).
-11. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#img).
-12. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#nav).
-13. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ul).
-14. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ol).
-15. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#li).
-16. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
+5. [`<header>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#header-element).
+6. [`<section>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#section).
+7. [`<p>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#p).
+8. [`<b>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#b).
+9. [`<i>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#i).
+10. [`<br>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#br).
+11. [`<div>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#div).
+12. [`<img>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#img).
+13. [`<nav>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#nav).
+14. [`<ul>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ul).
+15. [`<ol>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#ol).
+16. [`<li>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#li).
+17. [`<a>`](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-1/README.md#a).
 
 And many others...
 
@@ -125,6 +155,37 @@ In a webpage, this element typically contains information about the author, copy
 ```
 
 ![image](https://user-images.githubusercontent.com/58167190/180033986-c2869494-bec6-48b7-9382-e018eda1aeae.png)
+
+### header (element)
+
+`<header></header>`
+
+This element represents the **introductory content** of a page or of a section: usually a group of introductory or navigational aids. A `<header>` often contains things like a **logo**, the **site or article title** (with an `<h1>`–`<h6>` inside), a **search box**, or the main navigation.
+
+**Note**: Do not confuse `<header>` with the headings `<h1>` to `<h6>` we saw before. The headings are the **text titles** themselves; `<header>` is a **container** that groups those titles together with other introductory pieces (a logo, a date, navigation, etc.). In fact, a `<header>` usually *contains* a heading inside it.
+
+**Example (page header):**
+
+```
+<header>
+  <h1>Main Page Title</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="logo" />
+</header>
+```
+
+We can also use a `<header>` **inside** an article or section, to group that piece's own title and its introductory information:
+
+**Example (article header):**
+
+```
+<article>
+  <header>
+    <h2>The Planet Earth</h2>
+    <p>Posted on Wednesday, 4 October 2017 by Jane Smith</p>
+  </header>
+  <p>We live on a planet that's blue and green, with so many things still unseen.</p>
+</article>
+```
 
 ### section
 
