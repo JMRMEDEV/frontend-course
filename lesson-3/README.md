@@ -13,6 +13,7 @@ Do not worry if that definition sounds like a lot of jargon, you do not need to 
 - [**HTML and JavaScript**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#html-and-javascript)
 - [**JavaScript Strings**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#strings)
 - [**JavaScript Arrays**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#arrays)
+- [**Exercises & Challenges**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#exercises--challenges)
 - [**Sources**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#sources)
 
 ## JavaScript Pros and Cons
@@ -678,6 +679,388 @@ Arrays are everywhere in real applications: a list of products, the messages in 
 We are going to build a basic functional calculator with HTML + CSS and JavaScript. It must have the addition, subtraction, division and multiplication capabilities. Free layout.
 
 Remember the calculator you designed back in the **CSS lesson** (lesson 2)? That one only *looked* like a calculator, the buttons did nothing when clicked. Now is the moment to bring it to life: reuse that same HTML + CSS layout and, with everything you learned in this lesson (`getElementById`, events like `onclick`, functions and conditionals), make the buttons actually perform the math. In other words, we are turning the *static* calculator from lesson 2 into a *working* one.
+
+## Exercises & Challenges
+
+Below is a collection of exercises drawn from the live sessions, grouped by topic and ordered from easier to harder. Try each one **before** opening the solution, that struggle is where the learning happens.
+
+### Strings
+
+#### Reverse a string
+
+Write a function that takes a string and returns it reversed. `reverseString("hello")` should return `"olleh"`.
+
+**Hint.** `split`, `reverse`, and `join` turn this into a one-liner.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const reverseString = (input) => input.split("").reverse().join("");
+
+console.log(reverseString("hello")); // "olleh"
+```
+</details>
+
+#### Capitalize the first letter
+
+Return a word with its first letter capitalized. `capitalizeWord("javascript")` should return `"Javascript"`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const capitalizeWord = (input) => {
+  const firstLetter = input.charAt(0).toUpperCase();
+  const rest = input.slice(1);
+  return firstLetter.concat(rest);
+};
+
+console.log(capitalizeWord("javascript")); // "Javascript"
+```
+</details>
+
+#### Censor a bad word
+
+Write a function that replaces every occurrence of a forbidden word in a message with `"***"`. Make it case-insensitive.
+
+**Hint.** `replace` with a regular expression and the `gi` flags (global + insensitive) replaces *all* matches.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const censorMessage = (message, badWord) => {
+  const pattern = new RegExp(badWord, "gi");
+  return message.replace(pattern, "***");
+};
+
+console.log(censorMessage("You are a Sith and a Sith again", "sith"));
+// "You are a *** and a *** again"
+```
+</details>
+
+#### Enforce a tweet character limit
+
+Given a message, return `true` if it is within a 280-character limit, `false` otherwise.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const fitsInTweet = (message) => message.length <= 280;
+
+console.log(fitsInTweet("Hello there!")); // true
+```
+</details>
+
+#### Trim surrounding spaces
+
+A username came in with spaces at the start and end. Remove them.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const cleanUsername = (input) => input.trim();
+
+console.log(cleanUsername("   luke_skywalker   ")); // "luke_skywalker"
+```
+</details>
+
+#### Palindrome checker
+
+Write a function that returns `true` if a phrase reads the same forwards and backwards, ignoring case and spaces. Test it with `"Anita lava la tina"`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const isPalindrome = (phrase) => {
+  const clean = phrase.toLowerCase().replace(/ /g, "");
+  const reversed = clean.split("").reverse().join("");
+  return clean === reversed;
+};
+
+console.log(isPalindrome("Anita lava la tina")); // true
+console.log(isPalindrome("hello"));              // false
+```
+</details>
+
+### Operators
+
+#### Guard against division by zero
+
+Write a function that divides two numbers but never lets the program crash on a zero divisor. Use `try` / `catch` / `finally`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const safeDivide = (a, b) => {
+  try {
+    if (b === 0) throw new Error("You can't divide by zero");
+    return a / b;
+  } catch (error) {
+    console.log(error.message);
+    return null;
+  } finally {
+    console.log("Operation completed");
+  }
+};
+
+console.log(safeDivide(10, 2)); // 5
+console.log(safeDivide(10, 0)); // logs the error, returns null
+```
+</details>
+
+### Functions
+
+#### Area of a circle
+
+Write a function that returns the area of a circle given its radius. Use `Math.PI` and `Math.pow`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const getCircleArea = (radius) => Math.PI * Math.pow(radius, 2);
+
+console.log(getCircleArea(2)); // 12.566...
+```
+</details>
+
+#### Sum two fractions (compose functions)
+
+Add two fractions `n1/d1 + n2/d2` and return an object with the resulting `numerator`, `denominator`, and `decimal`. Reject a zero denominator. Design the pseudocode first: `denominator = d1 * d2`, `numerator = n1*d2 + n2*d1`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const sumFractions = (n1, d1, n2, d2) => {
+  if (d1 === 0 || d2 === 0) {
+    console.log("You can't divide by zero");
+    return;
+  }
+  const numerator = n1 * d2 + n2 * d1;
+  const denominator = d1 * d2;
+  return { numerator, denominator, decimal: numerator / denominator };
+};
+
+const r = sumFractions(3, 4, 7, 9);
+console.log(`${r.numerator}/${r.denominator} = ${r.decimal}`);
+// "55/36 = 1.5277777777777777"
+```
+</details>
+
+<!-- repaired: the recorded quadratic-equation exercise never reached a correct result on camera (operands mislabeled, then abandoned). This is a clean version preserving the intent (quadratic formula with Math.pow/Math.sqrt returning both roots). -->
+#### Solve a quadratic equation (both roots)
+
+Given `a`, `b`, `c`, return both roots of `ax² + bx + c = 0` using the quadratic formula.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const solveQuadratic = (a, b, c) => {
+  const discriminant = Math.pow(b, 2) - 4 * a * c;
+  if (discriminant < 0) return "No real roots";
+  const root = Math.sqrt(discriminant);
+  return {
+    x1: (-b + root) / (2 * a),
+    x2: (-b - root) / (2 * a),
+  };
+};
+
+console.log(solveQuadratic(1, -3, 2)); // { x1: 2, x2: 1 }
+```
+</details>
+
+### Arrays
+
+#### Double every value
+
+Given an array of numbers, return a new array with each value doubled, using `map`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const doubleValues = (nums) => nums.map((n) => n * 2);
+
+console.log(doubleValues([1, 2, 3, 4])); // [2, 4, 6, 8]
+```
+</details>
+
+#### Word lengths
+
+Given an array of words, return an array with the length of each word.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const wordLengths = (words) => words.map((word) => word.length);
+
+console.log(wordLengths(["apple", "cat", "banana"])); // [5, 3, 6]
+```
+</details>
+
+#### Sum the elements of an array
+
+Return the sum of an array's numeric elements using `forEach` and an accumulator.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const arraySum = (array) => {
+  let sum = 0;
+  array.forEach((element) => {
+    sum = sum + element;
+  });
+  return sum;
+};
+
+console.log(arraySum([1, 2, 3])); // 6
+```
+</details>
+
+### Objects
+
+#### Access nested properties
+
+Build a `user` object containing a nested `social` object (e.g. an `instagram` object with a `followers` count), then read the follower count with dot notation.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const user = {
+  name: "Luke",
+  social: {
+    instagram: { followers: 1200, following: 421 },
+  },
+};
+
+console.log(user.social.instagram.followers); // 1200
+```
+</details>
+
+#### Copy an object safely with spread
+
+Objects assigned directly are copied *by reference*, mutating the copy mutates the original. Prove it, then fix it with the spread operator so a customized copy leaves the default untouched.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const defaultCharacter = { level: 1, class: "warrior", mana: 0 };
+
+const customCharacter = { ...defaultCharacter };
+customCharacter.class = "wizard";
+
+console.log(customCharacter.class);  // "wizard"
+console.log(defaultCharacter.class); // "warrior" (unchanged)
+```
+</details>
+
+#### Omit a property with destructuring
+
+You are about to store a new user in the database but must never persist their `password`. Build a copy that excludes it.
+
+**Hint.** `const { password, ...rest } = user;` pulls out `password` and gathers everything else into `rest`.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const newUser = {
+  id: 1234,
+  name: "Luke",
+  email: "luke@rebels.org",
+  password: "abc1234",
+};
+
+const { password, ...userToStore } = newUser;
+
+console.log(userToStore); // no password property
+```
+</details>
+
+#### Object.keys / values / entries
+
+Given an object, get (1) its property names, (2) its values, and (3) its `[key, value]` pairs.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const user = { id: 1234, name: "Luke", email: "luke@rebels.org" };
+
+console.log(Object.keys(user));    // ["id", "name", "email"]
+console.log(Object.values(user));  // [1234, "Luke", "luke@rebels.org"]
+console.log(Object.entries(user)); // [["id",1234],["name","Luke"],["email","luke@rebels.org"]]
+```
+</details>
+
+### Algorithms & mini-projects
+
+#### Repeat a string N times
+
+Write a function that returns a string repeated `n` times. `repeatString("abc", 3)` → `"abcabcabc"`.
+
+<!-- repaired: the live solution got stuck and was taken home as homework; this is a clean version of the demonstrated "map over a dummy array" approach. -->
+<details>
+<summary>Solution</summary>
+
+```js
+const repeatString = (input, n) =>
+  new Array(n).fill(0).map(() => input).join("");
+
+console.log(repeatString("abc", 3)); // "abcabcabc"
+```
+</details>
+
+#### Time-of-day greeting
+
+Return `"day"`, `"afternoon"`, or `"night"` based on the current hour (24-hour clock), using conditionals and the `Date` object.
+
+<!-- repaired: the recorded hour boundaries overlapped/left gaps; these ranges are clean and gap-free while preserving the day/afternoon/night intent. -->
+<details>
+<summary>Solution</summary>
+
+```js
+const getGreeting = () => {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 12) return "day";
+  if (hour >= 12 && hour < 20) return "afternoon";
+  return "night";
+};
+
+console.log(`Have a great ${getGreeting()}!`);
+```
+</details>
+
+#### Calculator building blocks
+
+The Module Activity above asks you to build a working calculator. These two functions are the core building blocks, note the **divide-and-conquer** pattern: one function does the math, another builds the message.
+
+<details>
+<summary>Solution</summary>
+
+```js
+const getSum = (n1, n2) => n1 + n2;
+
+const printResult = (n1, n2) => {
+  const sum = getSum(n1, n2);
+  return `The operation is ${n1} + ${n2}. The result is ${sum}`;
+};
+
+console.log(printResult(5, 4)); // "The operation is 5 + 4. The result is 9"
+```
+</details>
 
 ## Sources
 
