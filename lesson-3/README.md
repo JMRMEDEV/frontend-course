@@ -9,6 +9,7 @@ Do not worry if that definition sounds like a lot of jargon, you do not need to 
 ## Module Content
 
 - [**JavaScript Pros and Cons**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#javascript-pros-and-cons)
+- [**JavaScript Data Types**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#javascript-data-types)
 - [**HTML and JavaScript**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#html-and-javascript)
 - [**JavaScript Strings**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#strings)
 - [**JavaScript Arrays**](https://github.com/JMRMEDEV/frontend-course/blob/master/lesson-3/README.md#arrays)
@@ -79,6 +80,51 @@ const exampleFunction = async (example) => {
 ```
 
 In this case, we don't know what we are receiving as example, and later we don't know what information we are receiving as a response. In this case we only want to display the received data, so we don't mind about the content. As we don't mind, we don't have to declare any explicit type so we could say this is *less work*. **JavaScript** give us this amount of freedom. But in my personal experience this is also its ***worst feature***. Since by not knowing the type, our application might result in total chaos.
+
+## JavaScript Data Types
+
+We just said JavaScript does not force us to *declare* a type. But the types still **exist**, JavaScript simply figures them out for us based on the value we give a variable. So it is worth knowing the main ones you will meet.
+
+A helpful way to picture a variable: think of it as a **labeled box in memory**. The **label** is the variable name, and inside the box we store a **value**. The *type* just tells us what kind of thing is in the box (a number? some text? a yes/no?), which is roughly how much and what shape of memory it needs.
+
+```
+   name ─┐            age ─┐            isStudent ─┐
+         ▼                  ▼                        ▼
+   ┌───────────┐      ┌───────────┐          ┌───────────┐
+   │  "Anna"   │      │    30     │          │   true    │
+   └───────────┘      └───────────┘          └───────────┘
+     (string)           (number)              (boolean)
+```
+
+The most common types in JavaScript are:
+
+- **string** → text, always written in quotes. `"Anna"`, `'hello'`, `` `hi` ``.
+- **number** → any number, whole or decimal. `30`, `3.14`, `-7`. (Unlike some languages, JavaScript does not separate `int` and `float`, a number is just a number.)
+- **boolean** → a simple yes/no value: `true` or `false`. Perfect for questions like "is the user logged in?".
+- **undefined** → a box that exists but has **nothing** put in it yet.
+- **null** → an *intentional* "empty on purpose" value, we deliberately say "there is nothing here".
+- **array** → an **ordered list** of values in a single box, written with `[ ]`. `["red", "green", "blue"]`. (We dedicate a whole section to these below.)
+- **object** → a box that groups **related values together with labels**, written with `{ }`. `{ name: "Anna", age: 30 }`.
+
+**Example:**
+
+```
+let name = "Anna";        // string
+let age = 30;             // number
+let isStudent = true;     // boolean
+let favoriteColors = ["red", "green"]; // array
+let person = { name: "Anna", age: 30 }; // object
+```
+
+Notice we never wrote the type, we just assigned a value and JavaScript understood the rest. There is even a built-in way to *ask* JavaScript what type a value is, using `typeof`:
+
+```
+console.log(typeof "Anna");  // "string"
+console.log(typeof 30);      // "number"
+console.log(typeof true);    // "boolean"
+```
+
+Do not feel you must memorize all of this now, you will get comfortable with each type as we use them. The key takeaway: even in a "typeless" language, values still have types, and knowing them helps you avoid the "total chaos" we warned about above.
 
 ## HTML and JavaScript
 
