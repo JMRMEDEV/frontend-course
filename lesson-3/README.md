@@ -80,7 +80,7 @@ So far, in the examples that we have seen that use **HTML and CSS** we use **sta
 
 ```
 <div style="background-color: red">
-  <text>Some cool text</text>
+  <p>Some cool text</p>
 </div>  
 ```
 

@@ -375,7 +375,7 @@ This property let us choose how **bold** do we want our ps.
 ```
 <div>
   <p style="font-weight: bold;">test1</p>
-  <p style="font-weight: regular;">test2</p>
+  <p style="font-weight: normal;">test2</p>
   <p style="font-weight: bolder;">test3</p>
 </div>
 ```

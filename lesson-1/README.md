@@ -117,7 +117,7 @@ In a webpage, this element typically contains information about the author, copy
     <h1>
       This is a header example
     </h1>
-    <p>And this is a random text \n</p>
+    <p>And this is a random text</p>
     <footer>
       In this place you will find <a href="https://www.google.com">useful links</a>
     </footer>
@@ -267,7 +267,7 @@ The purpose of this element is to provide **navigation** links (elements that ca
     <a href="https://www.youtube.com/">Youtube</a>
   </nav>
   <p>This is different from the navbar</p>
-<div>
+</div>
 ```
 
 ![image](https://user-images.githubusercontent.com/58167190/180034569-9b935520-27b4-4a61-89bc-3ab61470c3bb.png)
