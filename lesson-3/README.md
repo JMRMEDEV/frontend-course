@@ -589,6 +589,90 @@ console.log(text.replace("Anakin Skywalker", "Darth Vader")); // Expected output
 console.log(text.replace(/Anakin Skywalker/g, "Darth Vader")); // Expected output: "Darth Vader is very powerful, but Darth Vader is not a master"
 ```
 
+## Arrays
+
+An **array** is an **ordered list** of values stored in a single variable. Instead of creating one box per value, we keep many values lined up inside one box, each in its own numbered slot. We write arrays with **square brackets** `[ ]`, separating the values with commas.
+
+```
+const colors = ["red", "green", "blue"];
+```
+
+You actually already saw an array earlier in this lesson, remember the `message` variable full of single characters? That was an array too.
+
+### Accessing items (indexes)
+
+Each item has a position number called its **index**. A very important detail: **indexes start at `0`, not `1`**. So the first item is at index `0`, the second at index `1`, and so on.
+
+```
+const colors = ["red", "green", "blue"];
+
+console.log(colors[0]); // "red"
+console.log(colors[1]); // "green"
+console.log(colors[2]); // "blue"
+```
+
+A quick picture:
+
+```
+   index:     0         1         2
+           ┌───────┬─────────┬────────┐
+   colors: │ "red" │ "green" │ "blue" │
+           └───────┴─────────┴────────┘
+```
+
+### How many items? (`length`)
+
+Every array knows its own size through its `length` **property** (notice: no parentheses, it is not a function):
+
+```
+const colors = ["red", "green", "blue"];
+console.log(colors.length); // 3
+```
+
+### Some common array methods
+
+Just like strings, arrays come with built-in helpers. A few you will use constantly:
+
+- **`push`** → adds an item to the **end** of the array.
+
+```
+const colors = ["red", "green"];
+colors.push("blue");
+console.log(colors); // ["red", "green", "blue"]
+```
+
+- **`pop`** → removes and returns the **last** item.
+
+```
+const colors = ["red", "green", "blue"];
+const removed = colors.pop();
+console.log(removed); // "blue"
+console.log(colors);  // ["red", "green"]
+```
+
+- **`includes`** → asks whether a value is in the array, returning `true` or `false`.
+
+```
+const colors = ["red", "green", "blue"];
+console.log(colors.includes("green")); // true
+console.log(colors.includes("pink"));  // false
+```
+
+### Walking through an array (loop)
+
+Because an array is an ordered list, we often want to visit each item one by one. We can reuse the loop idea from the very beginning of this lesson, going from index `0` up to `length - 1`:
+
+```
+const colors = ["red", "green", "blue"];
+
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+// Prints: red, then green, then blue
+```
+
+Arrays are everywhere in real applications: a list of products, the messages in a chat, the songs in a playlist, all naturally live inside arrays.
+
 ## Module Activity
 
 We are going to build a basic functional calculator with HTML + CSS and JavaScript. It must have the addition, subtraction, division and multiplication capabilities. Free layout.
